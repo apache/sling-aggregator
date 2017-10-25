@@ -20,3 +20,11 @@ $ repo sync --no-clone-bundle
 ```
 
 The output is a flat list of all Sling modules.
+
+### Speeding up sync
+
+Syncing all Sling modules can take a while, so if your network is fast enough you can try using multiple jobs in parallel. To use 16 jobs, run
+
+```
+$ repo sync -j 16
+```
