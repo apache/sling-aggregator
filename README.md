@@ -15,7 +15,7 @@ $ chmod a+x ~/bin/repo
 See the detailed instructions at https://source.android.com/source/downloading#installing-repo.
 
 ```
-$ repo init --no-clone-bundle https://github.com/apache/sling-aggregator.git
+$ repo init --no-clone-bundle -u https://github.com/apache/sling-aggregator.git
 $ repo sync --no-clone-bundle
 ```
 
