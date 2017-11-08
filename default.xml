@@ -3,6 +3,7 @@
   <remote name='origin' fetch='.' />
   <default revision='master' remote='origin' />
   <project path='adapter-annotations' name='sling-adapter-annotations.git' />
+  <project path='aggregator' name='sling-aggregator.git' />
   <project path='apache-sling-jar-resource-bundle' name='sling-apache-sling-jar-resource-bundle.git' />
   <project path='archetype-parent' name='sling-archetype-parent.git' />
   <project path='bundle-archetype' name='sling-bundle-archetype.git' />
@@ -150,6 +151,7 @@
   <project path='org-apache-sling-karaf-integration-tests' name='sling-org-apache-sling-karaf-integration-tests.git' groups='karaf' />
   <project path='org-apache-sling-karaf-launchpad-oak-tar-integration-tests' name='sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git' groups='karaf' />
   <project path='org-apache-sling-launchpad-api' name='sling-org-apache-sling-launchpad-api.git' groups='launchpad' />
+  <project path='org-apache-sling-launchpad-base' name='sling-org-apache-sling-launchpad-base.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-content' name='sling-org-apache-sling-launchpad-content.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-contrib-testing' name='sling-org-apache-sling-launchpad-contrib-testing.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-installer' name='sling-org-apache-sling-launchpad-installer.git' groups='launchpad' />
@@ -257,4 +259,5 @@
   <project path='taglib-archetype' name='sling-taglib-archetype.git' />
   <project path='tooling-jenkins' name='sling-tooling-jenkins.git' />
   <project path='tooling-scm' name='sling-tooling-scm.git' />
+  <project path='whiteboard' name='sling-whiteboard.git' />
 </manifest>
