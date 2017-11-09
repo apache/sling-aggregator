@@ -25,7 +25,7 @@ import groovy.xml.MarkupBuilder
 //
 // we currently support basic authentication with username and password
 // or username and personal access token. Note that if you have
-// two-factor authentication enalbed you must use a personal access
+// two-factor authentication enabled you must use a personal access
 // token
 
 def parser = new JsonSlurper()
