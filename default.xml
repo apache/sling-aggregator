@@ -55,6 +55,7 @@
   <project path='org-apache-sling-commons-mime' name='sling-org-apache-sling-commons-mime.git' />
   <project path='org-apache-sling-commons-osgi' name='sling-org-apache-sling-commons-osgi.git' />
   <project path='org-apache-sling-commons-scheduler' name='sling-org-apache-sling-commons-scheduler.git' />
+  <project path='org-apache-sling-commons-testing' name='sling-org-apache-sling-commons-testing.git' />
   <project path='org-apache-sling-commons-threaddump' name='sling-org-apache-sling-commons-threaddump.git' />
   <project path='org-apache-sling-commons-threads' name='sling-org-apache-sling-commons-threads.git' />
   <project path='org-apache-sling-crankstart-launcher' name='sling-org-apache-sling-crankstart-launcher.git' groups='crankstart' />
@@ -145,6 +146,7 @@
   <project path='org-apache-sling-junit-performance' name='sling-org-apache-sling-junit-performance.git' groups='junit' />
   <project path='org-apache-sling-junit-remote' name='sling-org-apache-sling-junit-remote.git' groups='junit' />
   <project path='org-apache-sling-junit-scriptable' name='sling-org-apache-sling-junit-scriptable.git' groups='junit' />
+  <project path='org-apache-sling-junit-teleporter' name='sling-org-apache-sling-junit-teleporter.git' groups='junit' />
   <project path='org-apache-sling-karaf-configs' name='sling-org-apache-sling-karaf-configs.git' groups='karaf' />
   <project path='org-apache-sling-karaf-distribution' name='sling-org-apache-sling-karaf-distribution.git' groups='karaf' />
   <project path='org-apache-sling-karaf-features' name='sling-org-apache-sling-karaf-features.git' groups='karaf' />
@@ -258,6 +260,7 @@
   <project path='slingstart-maven-plugin' name='sling-slingstart-maven-plugin.git' />
   <project path='taglib-archetype' name='sling-taglib-archetype.git' />
   <project path='tooling-jenkins' name='sling-tooling-jenkins.git' />
+  <project path='tooling-release' name='sling-tooling-release.git' />
   <project path='tooling-scm' name='sling-tooling-scm.git' />
   <project path='whiteboard' name='sling-whiteboard.git' />
 </manifest>
