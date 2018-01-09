@@ -2,6 +2,10 @@
 
 This module is part of the [Apache Sling](https://sling.apache.org) project.
 
+It provides an XML file that lists all Sling modules, to allow for tools like `repo` to process multiple repositories at once.
+
+The list of modules is in a self-explaining format and can also be used in your own scripts if preferred.
+
 ## Retrieving all Sling modules
 
 This module allows quick checkout of all Sling modules from Git. It requires
@@ -28,3 +32,13 @@ Syncing all Sling modules can take a while, so if your network is fast enough yo
 ```
 $ repo sync -j 16
 ```
+
+### Updating the list of modules
+
+That list is found in the [default.xml](./default.xml) file. 
+
+To update it:
+
+    groovy collect-sling-repos.groovy > default.xml
+    
+Check changes with `git diff`and commit if needed.
