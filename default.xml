@@ -59,8 +59,8 @@
   <project path='org-apache-sling-commons-threaddump' name='sling-org-apache-sling-commons-threaddump.git' />
   <project path='org-apache-sling-commons-threads' name='sling-org-apache-sling-commons-threads.git' />
   <project path='org-apache-sling-crankstart-launcher' name='sling-org-apache-sling-crankstart-launcher.git' groups='crankstart' />
+  <project path='org-apache-sling-crankstart-test-model' name='sling-org-apache-sling-crankstart-test-model.git' groups='crankstart' />
   <project path='org-apache-sling-crankstart-test-services' name='sling-org-apache-sling-crankstart-test-services.git' groups='crankstart' />
-  <project path='org-apache-sling-cransktart-test-model' name='sling-org-apache-sling-cransktart-test-model.git' />
   <project path='org-apache-sling-datasource' name='sling-org-apache-sling-datasource.git' />
   <project path='org-apache-sling-discovery-api' name='sling-org-apache-sling-discovery-api.git' groups='discovery' />
   <project path='org-apache-sling-discovery-base' name='sling-org-apache-sling-discovery-base.git' groups='discovery' />
