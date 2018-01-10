@@ -48,5 +48,5 @@ That list is found in the [default.xml](./default.xml) file.
 To update it:
 
     groovy collect-sling-repos.groovy > default.xml
-    
-Check changes with `git diff`and commit if needed.
+
+Check changes with `git diff` and commit if needed.
