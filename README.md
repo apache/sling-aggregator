@@ -16,6 +16,10 @@ $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 $ chmod a+x ~/bin/repo
 ```
 
+**Install Repo on Mac with [Homebrew](https://brew.sh)**
+
+    brew install repo
+
 See the detailed instructions at https://source.android.com/source/downloading#installing-repo.
 
 ```
@@ -36,6 +40,10 @@ $ repo sync -j 16
 ### Updating the list of modules
 
 That list is found in the [default.xml](./default.xml) file. 
+
+**Install Groovy on Mac with [Homebrew](https://brew.sh)**
+
+    brew install groovy
 
 To update it:
 
