@@ -50,7 +50,7 @@ while ( link ) {
     // add all projects matching naming conventions
     def result = parser.parse(conn.inputStream)    
     slingRepos += result
-        .findAll { it.name.startsWith 'sling-' }
+        .findAll { it.name.startsWith('sling-') && !it.name.startsWith('sling-old') }
 
     // find link to next page, if applicable
     link = null
