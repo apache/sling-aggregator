@@ -225,7 +225,8 @@
   <project path='org-apache-sling-servlets-resolver' name='sling-org-apache-sling-servlets-resolver.git' groups='servlets' />
   <project path='org-apache-sling-settings' name='sling-org-apache-sling-settings.git' />
   <project path='org-apache-sling-starter' name='sling-org-apache-sling-starter.git' />
-  <project path='org-apache-sling-starter-startup' name='sling-org-apache-sling-starter-startup.git' />
+  <project path='org-apache-sling-starter-docker' name='sling-org-apache-sling-starter-docker.git' groups='starter' />
+  <project path='org-apache-sling-starter-startup' name='sling-org-apache-sling-starter-startup.git' groups='starter' />
   <project path='org-apache-sling-startupfilter' name='sling-org-apache-sling-startupfilter.git' />
   <project path='org-apache-sling-startupfilter-disabler' name='sling-org-apache-sling-startupfilter-disabler.git' />
   <project path='org-apache-sling-superimposing' name='sling-org-apache-sling-superimposing.git' />
