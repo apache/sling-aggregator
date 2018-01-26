@@ -39,7 +39,9 @@ $ repo sync -j 16
 
 ### Updating the list of modules
 
-That list is found in the [default.xml](./default.xml) file. 
+That list is found in the [default.xml](./default.xml) file.
+
+It is used to generate the [list of Git Repositories](http://sling.apache.org/repolist.html) on our website.
 
 **Install Groovy on Mac with [Homebrew](https://brew.sh)**
 
