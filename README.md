@@ -6,6 +6,8 @@ It provides an XML file that lists all Sling modules, to allow for tools like `r
 
 The list of modules is in a self-explaining format and can also be used in your own scripts if preferred.
 
+Note that there are related efforts at [SLING-7331](https://issues.apache.org/jira/browse/SLING-7331) and [SLING-7262](https://issues.apache.org/jira/browse/SLING-7262), we'll need to consolidate all this at some point.
+
 ## Retrieving all Sling modules
 
 This module allows quick checkout of all Sling modules from Git. It requires
