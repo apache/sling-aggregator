@@ -182,7 +182,8 @@
   <project path='org-apache-sling-pipes' name='sling-org-apache-sling-pipes.git' />
   <project path='org-apache-sling-provisioning-model' name='sling-org-apache-sling-provisioning-model.git' />
   <project path='org-apache-sling-query' name='sling-org-apache-sling-query.git' />
-  <project path='org-apache-sling-repoinit-parser' name='sling-org-apache-sling-repoinit-parser.git' />
+  <project path='org-apache-sling-repoinit-it' name='sling-org-apache-sling-repoinit-it.git' groups='repoinit' />
+  <project path='org-apache-sling-repoinit-parser' name='sling-org-apache-sling-repoinit-parser.git' groups='repoinit' />
   <project path='org-apache-sling-reqanalyzer' name='sling-org-apache-sling-reqanalyzer.git' />
   <project path='org-apache-sling-resource-editor' name='sling-org-apache-sling-resource-editor.git' />
   <project path='org-apache-sling-resource-inventory' name='sling-org-apache-sling-resource-inventory.git' />
