@@ -154,7 +154,7 @@
   <project path='org-apache-sling-karaf-launchpad-oak-tar-integration-tests' name='sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git' groups='karaf' />
   <project path='org-apache-sling-launchpad-api' name='sling-org-apache-sling-launchpad-api.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-base' name='sling-org-apache-sling-launchpad-base.git' groups='launchpad' />
-  <project path='org-apache-sling-launchpad-content' name='sling-org-apache-sling-launchpad-content.git' groups='launchpad' />
+  <project path='org-apache-sling-starter-content' name='sling-org-apache-sling-starter-content.git' groups='starter' />
   <project path='org-apache-sling-launchpad-contrib-testing' name='sling-org-apache-sling-launchpad-contrib-testing.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-installer' name='sling-org-apache-sling-launchpad-installer.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-integration-tests' name='sling-org-apache-sling-launchpad-integration-tests.git' groups='launchpad' />
