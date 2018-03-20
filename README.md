@@ -13,16 +13,29 @@ Note that there are related efforts at [SLING-7331](https://issues.apache.org/ji
 This module allows quick checkout of all Sling modules from Git. It requires
 the local installation of the [repo](https://android.googlesource.com/tools/repo) tool.
 
+### Repo Tool Installation (all platforms)
+
 ```
 $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 $ chmod a+x ~/bin/repo
 ```
 
-**Install Repo on Mac with [Homebrew](https://brew.sh)**
+See also the detailed instructions at https://source.android.com/source/downloading#installing-repo.
+
+### Repo Tool Installation on Mac with 2[Homebrew](https://brew.sh)
 
     brew install repo
 
-See the detailed instructions at https://source.android.com/source/downloading#installing-repo.
+### Synchronizing all Git repositories
+
+Clone this repository if needed
+
+```
+git clone https://github.com/apache/sling-aggregator.git
+cd sling-aggregator
+```
+
+Initialise the local repo checkout and synchronise all git repositories. The commands below must be run in the sling-aggreator git checkout.
 
 ```
 $ repo init --no-clone-bundle -u https://github.com/apache/sling-aggregator.git
