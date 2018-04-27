@@ -85,6 +85,14 @@
   <project path='org-apache-sling-extensions-slf4j-mdc' name='sling-org-apache-sling-extensions-slf4j-mdc.git' />
   <project path='org-apache-sling-extensions-webconsolebranding' name='sling-org-apache-sling-extensions-webconsolebranding.git' />
   <project path='org-apache-sling-extensions-webconsolesecurityprovider' name='sling-org-apache-sling-extensions-webconsolesecurityprovider.git' />
+  <project path='org-apache-sling-feature' name='sling-org-apache-sling-feature.git' />
+  <project path='org-apache-sling-feature-analyser' name='sling-org-apache-sling-feature-analyser.git' groups='feature' />
+  <project path='org-apache-sling-feature-applicationbuilder' name='sling-org-apache-sling-feature-applicationbuilder.git' groups='feature' />
+  <project path='org-apache-sling-feature-io' name='sling-org-apache-sling-feature-io.git' groups='feature' />
+  <project path='org-apache-sling-feature-karaf' name='sling-org-apache-sling-feature-karaf.git' groups='feature' />
+  <project path='org-apache-sling-feature-launcher' name='sling-org-apache-sling-feature-launcher.git' groups='feature' />
+  <project path='org-apache-sling-feature-modelconverter' name='sling-org-apache-sling-feature-modelconverter.git' groups='feature' />
+  <project path='org-apache-sling-feature-resolver' name='sling-org-apache-sling-feature-resolver.git' groups='feature' />
   <project path='org-apache-sling-featureflags' name='sling-org-apache-sling-featureflags.git' />
   <project path='org-apache-sling-fragment-activation' name='sling-org-apache-sling-fragment-activation.git' groups='fragment' />
   <project path='org-apache-sling-fragment-nashorn' name='sling-org-apache-sling-fragment-nashorn.git' groups='fragment' />
@@ -260,6 +268,7 @@
   <project path='samples' name='sling-samples.git' />
   <project path='servlet-archetype' name='sling-servlet-archetype.git' />
   <project path='site' name='sling-site.git' />
+  <project path='slingfeature-maven-plugin' name='sling-slingfeature-maven-plugin.git' />
   <project path='slingstart-archetype' name='sling-slingstart-archetype.git' />
   <project path='slingstart-maven-plugin' name='sling-slingstart-maven-plugin.git' />
   <project path='taglib-archetype' name='sling-taglib-archetype.git' />
