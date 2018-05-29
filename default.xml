@@ -229,6 +229,8 @@
   <project path='org-apache-sling-serviceuser-webconsole' name='sling-org-apache-sling-serviceuser-webconsole.git' />
   <project path='org-apache-sling-serviceusermapper' name='sling-org-apache-sling-serviceusermapper.git' />
   <project path='org-apache-sling-servlet-helpers' name='sling-org-apache-sling-servlet-helpers.git' />
+  <project path='org-apache-sling-servlets-annotations' name='sling-org-apache-sling-servlets-annotations.git' groups='servlets' />
+  <project path='org-apache-sling-servlets-annotations-it' name='sling-org-apache-sling-servlets-annotations-it.git' groups='servlets' />
   <project path='org-apache-sling-servlets-get' name='sling-org-apache-sling-servlets-get.git' groups='servlets' />
   <project path='org-apache-sling-servlets-post' name='sling-org-apache-sling-servlets-post.git' groups='servlets' />
   <project path='org-apache-sling-servlets-resolver' name='sling-org-apache-sling-servlets-resolver.git' groups='servlets' />
