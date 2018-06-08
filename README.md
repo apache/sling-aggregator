@@ -12,6 +12,11 @@ The list of modules is in a self-explaining format and can also be used in your 
 
 Note that there are related efforts at [SLING-7331](https://issues.apache.org/jira/browse/SLING-7331) and [SLING-7262](https://issues.apache.org/jira/browse/SLING-7262), we'll need to consolidate all this at some point.
 
+## Modules
+
+You can find a list of the Apache Sling modules [here](docs/modules.md). 
+This list is generated from the script [generate-aggregator-table.sh](https://github.com/apache/sling-whiteboard/blob/master/gh-badge-script/generate-aggregator-table.sh).
+
 ## Retrieving all Sling modules
 
 This module allows quick checkout of all Sling modules from Git. It requires
