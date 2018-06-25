@@ -21,6 +21,7 @@
   <project path='maven-sling-plugin' name='sling-maven-sling-plugin.git' />
   <project path='org-apache-sling-adapter' name='sling-org-apache-sling-adapter.git' />
   <project path='org-apache-sling-api' name='sling-org-apache-sling-api.git' />
+  <project path='org-apache-sling-app-cms' name='sling-org-apache-sling-app-cms.git' />
   <project path='org-apache-sling-auth-core' name='sling-org-apache-sling-auth-core.git' groups='auth' />
   <project path='org-apache-sling-auth-form' name='sling-org-apache-sling-auth-form.git' groups='auth' />
   <project path='org-apache-sling-auth-xing-api' name='sling-org-apache-sling-auth-xing-api.git' groups='auth' />
@@ -33,12 +34,14 @@
   <project path='org-apache-sling-caconfig-impl' name='sling-org-apache-sling-caconfig-impl.git' groups='caconfig' />
   <project path='org-apache-sling-caconfig-integration-tests' name='sling-org-apache-sling-caconfig-integration-tests.git' groups='caconfig' />
   <project path='org-apache-sling-caconfig-spi' name='sling-org-apache-sling-caconfig-spi.git' groups='caconfig' />
+  <project path='org-apache-sling-capabilities' name='sling-org-apache-sling-capabilities.git' />
   <project path='org-apache-sling-cassandra' name='sling-org-apache-sling-cassandra.git' />
   <project path='org-apache-sling-commons-cache-api' name='sling-org-apache-sling-commons-cache-api.git' />
   <project path='org-apache-sling-commons-cache-container-test' name='sling-org-apache-sling-commons-cache-container-test.git' />
   <project path='org-apache-sling-commons-cache-ehcache' name='sling-org-apache-sling-commons-cache-ehcache.git' />
   <project path='org-apache-sling-commons-cache-impl' name='sling-org-apache-sling-commons-cache-impl.git' />
   <project path='org-apache-sling-commons-cache-portal' name='sling-org-apache-sling-commons-cache-portal.git' />
+  <project path='org-apache-sling-commons-clam' name='sling-org-apache-sling-commons-clam.git' />
   <project path='org-apache-sling-commons-classloader' name='sling-org-apache-sling-commons-classloader.git' />
   <project path='org-apache-sling-commons-compiler' name='sling-org-apache-sling-commons-compiler.git' />
   <project path='org-apache-sling-commons-contentdetection' name='sling-org-apache-sling-commons-contentdetection.git' />
