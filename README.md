@@ -15,7 +15,36 @@ Note that there are related efforts at [SLING-7331](https://issues.apache.org/ji
 ## Modules
 
 You can find a list of the Apache Sling modules [here](docs/modules.md). 
-This list is generated from the script [generate-aggregator-table.sh](https://github.com/apache/sling-whiteboard/blob/master/gh-badge-script/generate-aggregator-table.sh).
+This list is generated from the script [generate-aggregator-table.sh](https://github.com/apache/sling-whiteboard/blob/master/gh-badge-script/generate-aggregator-table.sh)..
+
+### Updating Module Badges
+
+We have a simple script to update the badges in GitHub's README.md files. To update all repositories:
+
+    ./add-badges.sh [SLING_DIR]
+
+To update a single repository:
+
+    ./add-badges.sh [SLING_DIR] [REPO_NAME]
+
+### Updating the Aggregator List
+
+To update the aggregator list:
+
+    ./generate-aggregator-table.sh [SLING_DIR]
+
+### Dependencies
+
+This script depends on the following utilities:
+
+ - xpath
+ - [grip](https://github.com/joeyespo/grip)
+
+### Prerequisites
+
+ 1. Use the repo tool to extract all of the repositories in the [sling aggregator](https://github.com/apache/sling-aggregator)
+ 2. Ensure you have SSH based access enabled to GitHub
+ 3. Ensure all repository workspaces are in a clean state
 
 ## Retrieving all Sling modules
 
