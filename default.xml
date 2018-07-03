@@ -97,6 +97,7 @@
   <project path='org-apache-sling-feature-modelconverter' name='sling-org-apache-sling-feature-modelconverter.git' groups='feature' />
   <project path='org-apache-sling-feature-resolver' name='sling-org-apache-sling-feature-resolver.git' groups='feature' />
   <project path='org-apache-sling-featureflags' name='sling-org-apache-sling-featureflags.git' />
+  <project path='org-apache-sling-file-optimization' name='sling-org-apache-sling-file-optimization.git' />
   <project path='org-apache-sling-fragment-activation' name='sling-org-apache-sling-fragment-activation.git' groups='fragment' />
   <project path='org-apache-sling-fragment-nashorn' name='sling-org-apache-sling-fragment-nashorn.git' groups='fragment' />
   <project path='org-apache-sling-fragment-transaction' name='sling-org-apache-sling-fragment-transaction.git' groups='fragment' />
@@ -196,6 +197,7 @@
   <project path='org-apache-sling-repoinit-parser' name='sling-org-apache-sling-repoinit-parser.git' groups='repoinit' />
   <project path='org-apache-sling-reqanalyzer' name='sling-org-apache-sling-reqanalyzer.git' />
   <project path='org-apache-sling-resource-editor' name='sling-org-apache-sling-resource-editor.git' />
+  <project path='org-apache-sling-resource-filter' name='sling-org-apache-sling-resource-filter.git' />
   <project path='org-apache-sling-resource-inventory' name='sling-org-apache-sling-resource-inventory.git' />
   <project path='org-apache-sling-resource-presence' name='sling-org-apache-sling-resource-presence.git' />
   <project path='org-apache-sling-resourceaccesssecurity' name='sling-org-apache-sling-resourceaccesssecurity.git' />
