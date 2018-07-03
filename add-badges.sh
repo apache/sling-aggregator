@@ -40,9 +40,10 @@ function update_badges () {
     prepend
     
     STATUS=""
-    while IFS=, read -r ID LOC GH STAT EOL
+    while IFS=, read -r ID STAT EOL
     do
         if [ "$ID" == "$REPO_NAME" ]; then
+        	echo "Found status entry $STAT for $ID..."
             STATUS="$STAT"
         fi
     done < $SCRIPT_DIR/Sling-Repos.csv
@@ -53,8 +54,8 @@ function update_badges () {
     fi
     
     GROUP="$(xmllint --xpath "string(/manifest/project[@path=\"$REPO_NAME\"]/@groups)" ~/git/sling/aggregator/default.xml)"
-    echo -e "\nGroup: $GROUP"
     if [ ! -z "$GROUP" ]; then
+    	echo "Found group $GROUP..."
         LINE=" [![${GROUP}](https://sling.apache.org/badges/group-$GROUP.svg)](https://github.com/apache/sling-aggregator/blob/master/docs/groups/$GROUP.md)"
         prepend
     fi
