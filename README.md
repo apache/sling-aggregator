@@ -66,29 +66,16 @@ See also the detailed instructions at https://source.android.com/source/download
 
 ### Synchronizing all Git repositories
 
-Clone this repository if needed
-
-```
-git clone https://github.com/apache/sling-aggregator.git
-cd sling-aggregator
-```
-
 Initialise the local repo checkout and synchronise all git repositories. The commands below must be run in the sling-aggreator git checkout.
 
 ```
 $ repo init --no-clone-bundle -u https://github.com/apache/sling-aggregator.git
-$ repo sync --no-clone-bundle
+$ repo sync --no-clone-bundle -j 16
 ```
 
 The output is a flat list of all Sling modules.
 
-### Speeding up sync
-
-Syncing all Sling modules can take a while, so if your network is fast enough you can try using multiple jobs in parallel. To use 16 jobs, run
-
-```
-$ repo sync -j 16
-```
+The `-j 16` flag instructs repo to run 16 parallel checkout jobs and is added for performance reasons only.
 
 ### Updating the list of modules
 
