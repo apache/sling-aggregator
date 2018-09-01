@@ -36,6 +36,7 @@
   <project path='org-apache-sling-caconfig-spi' name='sling-org-apache-sling-caconfig-spi.git' groups='caconfig' />
   <project path='org-apache-sling-capabilities' name='sling-org-apache-sling-capabilities.git' />
   <project path='org-apache-sling-cassandra' name='sling-org-apache-sling-cassandra.git' />
+  <project path='org-apache-sling-clam' name='sling-org-apache-sling-clam.git' />
   <project path='org-apache-sling-commons-cache-api' name='sling-org-apache-sling-commons-cache-api.git' />
   <project path='org-apache-sling-commons-cache-container-test' name='sling-org-apache-sling-commons-cache-container-test.git' />
   <project path='org-apache-sling-commons-cache-ehcache' name='sling-org-apache-sling-commons-cache-ehcache.git' />
