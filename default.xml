@@ -48,6 +48,7 @@
   <project path='org-apache-sling-commons-contentdetection' name='sling-org-apache-sling-commons-contentdetection.git' />
   <project path='org-apache-sling-commons-fsclassloader' name='sling-org-apache-sling-commons-fsclassloader.git' />
   <project path='org-apache-sling-commons-html' name='sling-org-apache-sling-commons-html.git' />
+  <project path='org-apache-sling-commons-jcr-file' name='sling-org-apache-sling-commons-jcr-file.git' />
   <project path='org-apache-sling-commons-johnzon' name='sling-org-apache-sling-commons-johnzon.git' />
   <project path='org-apache-sling-commons-log' name='sling-org-apache-sling-commons-log.git' />
   <project path='org-apache-sling-commons-log-webconsole' name='sling-org-apache-sling-commons-log-webconsole.git' />
@@ -128,6 +129,7 @@
   <project path='org-apache-sling-installer-hc' name='sling-org-apache-sling-installer-hc.git' groups='installer' />
   <project path='org-apache-sling-installer-it' name='sling-org-apache-sling-installer-it.git' groups='installer' />
   <project path='org-apache-sling-installer-provider-file' name='sling-org-apache-sling-installer-provider-file.git' groups='installer' />
+  <project path='org-apache-sling-installer-provider-installhook' name='sling-org-apache-sling-installer-provider-installhook.git' groups='installer' />
   <project path='org-apache-sling-installer-provider-jcr' name='sling-org-apache-sling-installer-provider-jcr.git' groups='installer' />
   <project path='org-apache-sling-javax-activation' name='sling-org-apache-sling-javax-activation.git' />
   <project path='org-apache-sling-jcr-api' name='sling-org-apache-sling-jcr-api.git' groups='jcr' />
@@ -136,6 +138,7 @@
   <project path='org-apache-sling-jcr-contentloader' name='sling-org-apache-sling-jcr-contentloader.git' groups='jcr' />
   <project path='org-apache-sling-jcr-contentparser' name='sling-org-apache-sling-jcr-contentparser.git' groups='jcr' />
   <project path='org-apache-sling-jcr-davex' name='sling-org-apache-sling-jcr-davex.git' groups='jcr' />
+  <project path='org-apache-sling-jcr-filetransfer' name='sling-org-apache-sling-jcr-filetransfer.git' groups='jcr' />
   <project path='org-apache-sling-jcr-jackrabbit-accessmanager' name='sling-org-apache-sling-jcr-jackrabbit-accessmanager.git' groups='jcr' />
   <project path='org-apache-sling-jcr-jackrabbit-base' name='sling-org-apache-sling-jcr-jackrabbit-base.git' groups='jcr' />
   <project path='org-apache-sling-jcr-jackrabbit-usermanager' name='sling-org-apache-sling-jcr-jackrabbit-usermanager.git' groups='jcr' />
