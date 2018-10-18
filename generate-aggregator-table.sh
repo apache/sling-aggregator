@@ -14,7 +14,7 @@ function write_data () {
             echo -n -e $LINE >> $SLING_DIR/aggregator/docs/groups/$GROUP.md
         else
             echo "Creating group file"
-            echo -n -e "[Apache Sling](http://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > [Modules](https://github.com/apache/sling-aggregator/blob/master/docs/modules.md) > $GROUP\n# $GROUP Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/groups/$GROUP.md
+            echo -n -e "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > [Modules](https://github.com/apache/sling-aggregator/blob/master/docs/modules.md) > $GROUP\n# $GROUP Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/groups/$GROUP.md
             echo -n -e $LINE >> $SLING_DIR/aggregator/docs/groups/$GROUP.md
         fi
     fi
@@ -26,7 +26,7 @@ function write_data () {
             echo -n -e $LINE >> $SLING_DIR/aggregator/docs/status/$STATUS.md
         else
             echo "Creating status file"
-            echo -n -e "[Apache Sling](http://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > [Modules](https://github.com/apache/sling-aggregator/blob/master/docs/modules.md) > $STATUS\n# $STATUS Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/status/$STATUS.md
+            echo -n -e "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > [Modules](https://github.com/apache/sling-aggregator/blob/master/docs/modules.md) > $STATUS\n# $STATUS Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/status/$STATUS.md
             echo -n -e $LINE >> $SLING_DIR/aggregator/docs/status/$STATUS.md
         fi
     fi
@@ -60,7 +60,7 @@ function add_repo () {
         done < $SCRIPT_DIR/Sling-Repos.csv
         
         echo "Adding standard items for $REPO_NAME"
-        LINE="\n| [$NAME](https://github.com/apache/sling-$REPO_NAME) <br/> <small>([$ARTIFACT_ID](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22$ARTIFACT_ID%22))</small> | $DESCRIPTION | "
+        LINE="\n| [$NAME](https://github.com/apache/sling-$REPO_NAME) <br/> <small>([$ARTIFACT_ID](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22$ARTIFACT_ID%22))</small> | $DESCRIPTION | "
         write_data
         
         BUILD_RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" https://builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8)  > /dev/null 2>&1
@@ -104,12 +104,12 @@ function add_repo () {
             echo "No Maven release found for $ARTIFACT_ID"
         else
             echo "Adding Maven release badge for $ARTIFACT_ID"
-            LINE="&#32;[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.sling/$ARTIFACT_ID/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22$ARTIFACT_ID%22)"
+            LINE="&#32;[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.sling/$ARTIFACT_ID/badge.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22$ARTIFACT_ID%22)"
             write_data
         fi
         
         if [ ! -z $STATUS ]; then
-            LINE="&#32;[![$STATUS](http://sling.apache.org/badges/status-$STATUS.svg)](https://github.com/apache/sling-aggregator/blob/master/docs/status/$STATUS.md)"
+            LINE="&#32;[![$STATUS](https://sling.apache.org/badges/status-$STATUS.svg)](https://github.com/apache/sling-aggregator/blob/master/docs/status/$STATUS.md)"
             write_data
         fi
         
@@ -139,7 +139,7 @@ rm -rf $SLING_DIR/aggregator/docs/status/* $SLING_DIR/aggregator/docs/groups/*
 mkdir $SLING_DIR/aggregator/docs
 mkdir $SLING_DIR/aggregator/docs/groups
 mkdir $SLING_DIR/aggregator/docs/status
-echo -e -n "[Apache Sling](http://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > Modules\n# Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/modules.md
+echo -e -n "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > Modules\n# Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/modules.md
 
 echo "Handling all repos in $SLING_DIR"
 for REPO in $SLING_DIR/*/ ; do
