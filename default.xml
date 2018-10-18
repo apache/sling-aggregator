@@ -230,6 +230,7 @@
   <project path='org-apache-sling-scripting-sightly-js-provider' name='sling-org-apache-sling-scripting-sightly-js-provider.git' groups='scripting' />
   <project path='org-apache-sling-scripting-sightly-models-provider' name='sling-org-apache-sling-scripting-sightly-models-provider.git' groups='scripting' />
   <project path='org-apache-sling-scripting-sightly-repl' name='sling-org-apache-sling-scripting-sightly-repl.git' groups='scripting' />
+  <project path='org-apache-sling-scripting-sightly-runtime' name='sling-org-apache-sling-scripting-sightly-runtime.git' groups='scripting' />
   <project path='org-apache-sling-scripting-sightly-testing' name='sling-org-apache-sling-scripting-sightly-testing.git' groups='scripting' />
   <project path='org-apache-sling-scripting-sightly-testing-content' name='sling-org-apache-sling-scripting-sightly-testing-content.git' groups='scripting' />
   <project path='org-apache-sling-scripting-thymeleaf' name='sling-org-apache-sling-scripting-thymeleaf.git' groups='scripting' />
