@@ -35,6 +35,7 @@
   <project path='org-apache-sling-caconfig-integration-tests' name='sling-org-apache-sling-caconfig-integration-tests.git' groups='caconfig' />
   <project path='org-apache-sling-caconfig-spi' name='sling-org-apache-sling-caconfig-spi.git' groups='caconfig' />
   <project path='org-apache-sling-capabilities' name='sling-org-apache-sling-capabilities.git' />
+  <project path='org-apache-sling-capabilities-jcr' name='sling-org-apache-sling-capabilities-jcr.git' />
   <project path='org-apache-sling-cassandra' name='sling-org-apache-sling-cassandra.git' />
   <project path='org-apache-sling-clam' name='sling-org-apache-sling-clam.git' />
   <project path='org-apache-sling-commons-cache-api' name='sling-org-apache-sling-commons-cache-api.git' />
@@ -93,6 +94,7 @@
   <project path='org-apache-sling-feature' name='sling-org-apache-sling-feature.git' />
   <project path='org-apache-sling-feature-analyser' name='sling-org-apache-sling-feature-analyser.git' groups='feature' />
   <project path='org-apache-sling-feature-applicationbuilder' name='sling-org-apache-sling-feature-applicationbuilder.git' groups='feature' />
+  <project path='org-apache-sling-feature-extension-content' name='sling-org-apache-sling-feature-extension-content.git' groups='feature' />
   <project path='org-apache-sling-feature-io' name='sling-org-apache-sling-feature-io.git' groups='feature' />
   <project path='org-apache-sling-feature-karaf' name='sling-org-apache-sling-feature-karaf.git' groups='feature' />
   <project path='org-apache-sling-feature-launcher' name='sling-org-apache-sling-feature-launcher.git' groups='feature' />
@@ -145,6 +147,7 @@
   <project path='org-apache-sling-jcr-jcr-wrapper' name='sling-org-apache-sling-jcr-jcr-wrapper.git' groups='jcr' />
   <project path='org-apache-sling-jcr-js-nodetypes' name='sling-org-apache-sling-jcr-js-nodetypes.git' groups='jcr' />
   <project path='org-apache-sling-jcr-oak-server' name='sling-org-apache-sling-jcr-oak-server.git' groups='jcr' />
+  <project path='org-apache-sling-jcr-packageinit' name='sling-org-apache-sling-jcr-packageinit.git' groups='jcr' />
   <project path='org-apache-sling-jcr-registration' name='sling-org-apache-sling-jcr-registration.git' groups='jcr' />
   <project path='org-apache-sling-jcr-repoinit' name='sling-org-apache-sling-jcr-repoinit.git' groups='jcr' />
   <project path='org-apache-sling-jcr-repository-it-resource-versioning' name='sling-org-apache-sling-jcr-repository-it-resource-versioning.git' groups='jcr' />
