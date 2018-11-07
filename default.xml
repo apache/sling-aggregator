@@ -93,7 +93,9 @@
   <project path='org-apache-sling-extensions-webconsolesecurityprovider' name='sling-org-apache-sling-extensions-webconsolesecurityprovider.git' />
   <project path='org-apache-sling-feature' name='sling-org-apache-sling-feature.git' />
   <project path='org-apache-sling-feature-analyser' name='sling-org-apache-sling-feature-analyser.git' groups='feature' />
+  <project path='org-apache-sling-feature-apiregions' name='sling-org-apache-sling-feature-apiregions.git' groups='feature' />
   <project path='org-apache-sling-feature-applicationbuilder' name='sling-org-apache-sling-feature-applicationbuilder.git' groups='feature' />
+  <project path='org-apache-sling-feature-extension-apiregions' name='sling-org-apache-sling-feature-extension-apiregions.git' groups='feature' />
   <project path='org-apache-sling-feature-extension-content' name='sling-org-apache-sling-feature-extension-content.git' groups='feature' />
   <project path='org-apache-sling-feature-io' name='sling-org-apache-sling-feature-io.git' groups='feature' />
   <project path='org-apache-sling-feature-karaf' name='sling-org-apache-sling-feature-karaf.git' groups='feature' />
