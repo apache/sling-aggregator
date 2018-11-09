@@ -14,7 +14,7 @@ function write_data () {
             echo -n -e $LINE >> $SLING_DIR/aggregator/docs/groups/$GROUP.md
         else
             echo "Creating group file"
-            echo -n -e "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > [Modules](https://github.com/apache/sling-aggregator/blob/master/docs/modules.md) > $GROUP\n# $GROUP Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/groups/$GROUP.md
+            echo -n -e "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > [Modules](https://github.com/apache/sling-aggregator/blob/master/docs/modules.md) > $GROUP\n# $GROUP Modules\n\n| Module | Description | Module&nbsp;Status | Pull&nbsp;Requests |\n|---	|---	|---	|---    |" > $SLING_DIR/aggregator/docs/groups/$GROUP.md
             echo -n -e $LINE >> $SLING_DIR/aggregator/docs/groups/$GROUP.md
         fi
     fi
@@ -26,7 +26,7 @@ function write_data () {
             echo -n -e $LINE >> $SLING_DIR/aggregator/docs/status/$STATUS.md
         else
             echo "Creating status file"
-            echo -n -e "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > [Modules](https://github.com/apache/sling-aggregator/blob/master/docs/modules.md) > $STATUS\n# $STATUS Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/status/$STATUS.md
+            echo -n -e "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > [Modules](https://github.com/apache/sling-aggregator/blob/master/docs/modules.md) > $STATUS\n# $STATUS Modules\n\n| Module | Description | Module&nbsp;Status | Pull&nbsp;Requests |\n|---	|---	|---	|---    |" > $SLING_DIR/aggregator/docs/status/$STATUS.md
             echo -n -e $LINE >> $SLING_DIR/aggregator/docs/status/$STATUS.md
         fi
     fi
@@ -82,7 +82,7 @@ function add_repo () {
         fi
         
         COVERAGE_CONTENTS=$(curl -L https://img.shields.io/jenkins/c/https/builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8.svg) > /dev/null 2>&1
-        if [[ $COVERAGE_CONTENTS = *"inaccessible"* || $COVERAGE_CONTENTS = *"invalid"* ]]; then
+        if [[ $COVERAGE_CONTENTS = *"inaccessible"* || $COVERAGE_CONTENTS = *"not found"* || $COVERAGE_CONTENTS = *"invalid"* ]]; then
             echo "No coverage reports found for $REPO_NAME"
         else
             echo "Adding coverage badge for $REPO_NAME"
@@ -118,7 +118,7 @@ function add_repo () {
             write_data
         fi
     
-        LINE=" |"
+        LINE=" | &#32;[![Pull Requests](https://img.shields.io/github/issues-pr/apache/sling-$REPO_NAME.svg)](https://github.com/apache/sling-$REPO_NAME/pulls) |"
         write_data
     fi
 }
@@ -139,7 +139,7 @@ rm -rf $SLING_DIR/aggregator/docs/status/* $SLING_DIR/aggregator/docs/groups/*
 mkdir $SLING_DIR/aggregator/docs
 mkdir $SLING_DIR/aggregator/docs/groups
 mkdir $SLING_DIR/aggregator/docs/status
-echo -e -n "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > Modules\n# Modules\n\n| Module | Description | Module&nbsp;Status |\n|---	|---	|---    |" > $SLING_DIR/aggregator/docs/modules.md
+echo -e -n "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > Modules\n# Modules\n\n| Module | Description | Module&nbsp;Status | Pull&nbsp;Requests |\n|---	|---	|---    	|---|" > $SLING_DIR/aggregator/docs/modules.md
 
 echo "Handling all repos in $SLING_DIR"
 for REPO in $SLING_DIR/*/ ; do
