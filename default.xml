@@ -97,6 +97,7 @@
   <project path='org-apache-sling-feature-applicationbuilder' name='sling-org-apache-sling-feature-applicationbuilder.git' groups='feature' />
   <project path='org-apache-sling-feature-extension-apiregions' name='sling-org-apache-sling-feature-extension-apiregions.git' groups='feature' />
   <project path='org-apache-sling-feature-extension-content' name='sling-org-apache-sling-feature-extension-content.git' groups='feature' />
+  <project path='org-apache-sling-feature-inventoryprinter' name='sling-org-apache-sling-feature-inventoryprinter.git' groups='feature' />
   <project path='org-apache-sling-feature-io' name='sling-org-apache-sling-feature-io.git' groups='feature' />
   <project path='org-apache-sling-feature-karaf' name='sling-org-apache-sling-feature-karaf.git' groups='feature' />
   <project path='org-apache-sling-feature-launcher' name='sling-org-apache-sling-feature-launcher.git' groups='feature' />
@@ -178,6 +179,7 @@
   <project path='org-apache-sling-launchpad-contrib-testing' name='sling-org-apache-sling-launchpad-contrib-testing.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-installer' name='sling-org-apache-sling-launchpad-installer.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-integration-tests' name='sling-org-apache-sling-launchpad-integration-tests.git' groups='launchpad' />
+  <project path='org-apache-sling-launchpad-startupmanager' name='sling-org-apache-sling-launchpad-startupmanager.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-test-bundles' name='sling-org-apache-sling-launchpad-test-bundles.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-test-fragment' name='sling-org-apache-sling-launchpad-test-fragment.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-test-services' name='sling-org-apache-sling-launchpad-test-services.git' groups='launchpad' />
@@ -217,6 +219,8 @@
   <project path='org-apache-sling-resourceresolver' name='sling-org-apache-sling-resourceresolver.git' />
   <project path='org-apache-sling-rewriter' name='sling-org-apache-sling-rewriter.git' />
   <project path='org-apache-sling-scripting-api' name='sling-org-apache-sling-scripting-api.git' groups='scripting' />
+  <project path='org-apache-sling-scripting-bundle-tracker' name='sling-org-apache-sling-scripting-bundle-tracker.git' groups='scripting' />
+  <project path='org-apache-sling-scripting-bundle-tracker-it' name='sling-org-apache-sling-scripting-bundle-tracker-it.git' groups='scripting' />
   <project path='org-apache-sling-scripting-console' name='sling-org-apache-sling-scripting-console.git' groups='scripting' />
   <project path='org-apache-sling-scripting-core' name='sling-org-apache-sling-scripting-core.git' groups='scripting' />
   <project path='org-apache-sling-scripting-el-api' name='sling-org-apache-sling-scripting-el-api.git' groups='scripting' />
@@ -283,6 +287,7 @@
   <project path='org-apache-sling-xss' name='sling-org-apache-sling-xss.git' />
   <project path='parent' name='sling-parent.git' />
   <project path='samples' name='sling-samples.git' />
+  <project path='scriptingbundle-maven-plugin' name='sling-scriptingbundle-maven-plugin.git' />
   <project path='servlet-archetype' name='sling-servlet-archetype.git' />
   <project path='site' name='sling-site.git' />
   <project path='slingfeature-maven-plugin' name='sling-slingfeature-maven-plugin.git' />
