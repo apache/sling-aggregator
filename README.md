@@ -71,7 +71,11 @@ Initialise the local repo checkout and synchronise all git repositories. The com
 ```
 $ repo init --no-clone-bundle -u https://github.com/apache/sling-aggregator.git
 $ repo sync --no-clone-bundle -j 16
+$ repo forall -c 'git checkout master'
 ```
+
+The last command ensures that all repositories are set to use the master branch. For some reason `repo` checks out
+the latest revision but does not check out a specific branch.
 
 The output is a flat list of all Sling modules.
 
