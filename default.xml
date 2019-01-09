@@ -187,6 +187,7 @@
   <project path='org-apache-sling-launchpad-testing' name='sling-org-apache-sling-launchpad-testing.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-testing-war' name='sling-org-apache-sling-launchpad-testing-war.git' groups='launchpad' />
   <project path='org-apache-sling-models-api' name='sling-org-apache-sling-models-api.git' groups='models' />
+  <project path='org-apache-sling-models-caconfig' name='sling-org-apache-sling-models-caconfig.git' groups='models' />
   <project path='org-apache-sling-models-impl' name='sling-org-apache-sling-models-impl.git' groups='models' />
   <project path='org-apache-sling-models-integration-tests' name='sling-org-apache-sling-models-integration-tests.git' groups='models' />
   <project path='org-apache-sling-models-jacksonexporter' name='sling-org-apache-sling-models-jacksonexporter.git' groups='models' />
