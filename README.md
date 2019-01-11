@@ -31,14 +31,7 @@ To update a single repository:
 
 To update the aggregator list:
 
-    ./generate-aggregator-table.sh [SLING_DIR]
-
-### Dependencies
-
-This script depends on the following utilities:
-
- - xpath
- - [grip](https://github.com/joeyespo/grip)
+    groovy generate-aggregator-table.groovy [SLING_DIR]
 
 ### Prerequisites
 
