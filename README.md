@@ -15,7 +15,7 @@ Note that there are related efforts at [SLING-7331](https://issues.apache.org/ji
 ## Modules
 
 You can find a list of the Apache Sling modules [here](docs/modules.md). 
-This list is generated from the script [generate-aggregator-table.sh](https://github.com/apache/sling-whiteboard/blob/master/gh-badge-script/generate-aggregator-table.sh)..
+This list is generated from the script [generate-aggregator-table.groovy](https://github.com/apache/sling-aggregator/blob/master/generate-aggregator-table.groovy).
 
 ### Updating Module Badges
 
