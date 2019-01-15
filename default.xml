@@ -18,7 +18,7 @@
   <project path='launchpad-webapp-archetype' name='sling-launchpad-webapp-archetype.git' />
   <project path='maven-jcrocm-plugin' name='sling-maven-jcrocm-plugin.git' />
   <project path='maven-launchpad-plugin' name='sling-maven-launchpad-plugin.git' />
-  <project path='maven-sling-plugin' name='sling-maven-sling-plugin.git' />
+  <project path='maven-plugin' name='sling-maven-plugin.git' />
   <project path='org-apache-sling-adapter' name='sling-org-apache-sling-adapter.git' />
   <project path='org-apache-sling-api' name='sling-org-apache-sling-api.git' />
   <project path='org-apache-sling-app-cms' name='sling-org-apache-sling-app-cms.git' />
