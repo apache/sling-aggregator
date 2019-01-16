@@ -21,17 +21,17 @@ import groovy.io.FileType
 import groovy.util.XmlParser
 import groovy.util.Node
 
+if(args.length == 0){
+    println "Please provide the Sling Directory: groovy generate-aggregator-table.groovy [SLING_DIR]"
+    System.exit(1)
+}
+
 def slingDir = args[0]
 
 println "Aggregator Table Generation!"
 println "-------------------------"
 
-if (slingDir == null) {
-    println "Please provide the Sling Directory: groovy generate-aggregator-table.groovy [SLING_DIR]"
-    exit 1
-} else {
-    println "Updating aggregator tables in " + slingDir + "/aggregator"
-}
+println "Updating aggregator tables in " + slingDir + "/aggregator"
 
 def docsDir = new File(slingDir + "/aggregator/docs")
 groupsDir = new File(docsDir, "groups")
@@ -42,9 +42,9 @@ manifest = new XmlParser().parseText(new File(slingDir+"/aggregator/default.xml"
 assert manifest instanceof Node
 
 println "Reading status lists..."
-deprecated = new File(slingDir+"/aggregator/deprecated-projects.txt").text.split("/n")
+deprecated = new File(slingDir+"/aggregator/deprecated-projects.txt").text.split("\\n")
 assert deprecated
-contrib = new File(slingDir+"/aggregator/contrib-projects.txt").text.split("/n")
+contrib = new File(slingDir+"/aggregator/contrib-projects.txt").text.split("\\n")
 assert contrib
 
 println "Deleting old groups and status folders..."
@@ -89,12 +89,15 @@ void addRepo(File repoFolder, Node manifest) {
         project['group'] = getProjectGroup(repoName)
         project['folder'] = repoName
         
-        if (deprecated.contains(repoName)) {
-            project['status'] = 'deprecated'
-        } else if (contrib.contains(repoName)) {
+        if (contrib.contains(repoName)) {
+            println "Setting project status to contrib..."
             project['status'] = 'contrib'
         }
-
+        if (deprecated.contains(repoName)) {
+            println "Setting project status to deprecated..."
+            project['status'] = 'deprecated'
+        }
+        
         calculateBadges(project)
         
         writeProject(project)
