@@ -53,7 +53,7 @@ $ chmod a+x ~/bin/repo
 
 See also the detailed instructions at https://source.android.com/source/downloading#installing-repo.
 
-### Repo Tool Installation on Mac with 2[Homebrew](https://brew.sh)
+### Repo Tool Installation on Mac with [Homebrew](https://brew.sh)
 
     brew install repo
 
