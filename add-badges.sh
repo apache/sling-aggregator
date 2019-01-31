@@ -1,10 +1,8 @@
 #!/bin/bash
 
-SLING_DIR=$1
-
-PROJECT=$2
-
 SCRIPT_DIR=$(pwd)
+
+AUTO_COMMIT=0
 
 function prepend () {
     echo -e "$LINE$(cat README.md)" > README.md
@@ -125,13 +123,16 @@ function update_badges () {
     grip -b > /dev/null 2>&1 & > /dev/null
     PID=$!
     
-    if [[ ! -z $ARTIFACT_ID ]]; then
-        echo "Commit results? (C=Commit,N=No,R=Revert,O=Overwrite README)?"
+    if [[ ${AUTO_COMMIT} -eq 1 ]]; then
+        RESULTS="C"
     else
-        echo "Commit results? (C=Commit,N=No,R=Revert)?"
+        if [[ ! -z $ARTIFACT_ID ]]; then
+            echo "Commit results? (C=Commit,N=No,R=Revert,O=Overwrite README)?"
+        else
+            echo "Commit results? (C=Commit,N=No,R=Revert)?"
+        fi
+        read RESULTS
     fi
-    read RESULTS
-    
     kill $PID 2>&1 > /dev/null
     
     if [ "$RESULTS" == "C" ]; then
@@ -149,8 +150,12 @@ function handle_repo () {
     if [ ! -e "README.md" ]; then
         echo "No README.md found in $REPO"
     elif egrep -q "https?:\/\/sling\.apache\.org\/res\/logos\/sling\.png" "README.md"; then
-        echo "Badge already present on $REPO, overwrite (Y/N)?"
-        read OVERWRITE
+        if [[ ${AUTO_COMMIT} -eq 1 ]]; then
+            OVERWRITE="Y"
+        else
+            echo "Badge already present on $REPO, overwrite (Y/N)?"
+            read OVERWRITE
+        fi
         if [ "$OVERWRITE" == "Y" ]; then
             sed -i -e 1,4d README.md
             rm README.md-e
@@ -162,6 +167,26 @@ function handle_repo () {
         update_badges
     fi
 }
+
+while getopts "o" opt; do
+    case "$opt" in
+        o)
+            AUTO_COMMIT=1
+            shift
+            ;;
+    esac
+done
+
+# if [[ ${AUTO_COMMIT} -eq 1 ]]; then
+#     SLING_DIR=$1
+#     PROJECT=$2
+# else
+#
+# fi
+
+SLING_DIR=$1
+PROJECT=$2
+
 
 if [ ! -f ~/.grip/settings.py ]; then
     echo "Did not find GitHub Access token file, please generate an access token on GitHub https://github.com/settings/tokens/new?scopes= and provide it below:"
