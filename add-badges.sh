@@ -40,22 +40,30 @@ function update_badges () {
     prepend
     
     STATUS=""
-    while IFS=, read -r ID STAT EOL
-    do
-        if [ "$ID" == "$REPO_NAME" ]; then
-        	echo "Found status entry $STAT for $ID..."
-            STATUS="$STAT"
+    for module in `cat $SCRIPT_DIR/contrib-projects.txt`; do
+        if [[ $project == $REPO_NAME ]]; then
+            STATUS="contrib"
+            break
         fi
-    done < $SCRIPT_DIR/Sling-Repos.csv
+    done
+
+    if [[ -z $STATUS ]]; then
+        for module in `cat $SCRIPT_DIR/deprecated-projects.txt`; do
+            if [[ $project == $REPO_NAME ]]; then
+                STATUS="deprecated"
+                break
+            fi
+        done
+    fi
     
     if [ ! -z $STATUS ]; then
-        LINE="&#32;[![$STATUS](http://sling.apache.org/badges/status-$STATUS.svg)](https://github.com/apache/sling-aggregator/blob/master/docs/status/$STATUS.md)"
+        LINE="&#32;[![$STATUS](https://sling.apache.org/badges/status-$STATUS.svg)](https://github.com/apache/sling-aggregator/blob/master/docs/status/$STATUS.md)"
         prepend
     fi
     
-    GROUP="$(xmllint --xpath "string(/manifest/project[@path=\"$REPO_NAME\"]/@groups)" ~/git/sling/aggregator/default.xml)"
+    GROUP="$(xmllint --xpath "string(/manifest/project[@path=\"$REPO_NAME\"]/@groups)" $SCRIPT_DIR/default.xml)"
     if [ ! -z "$GROUP" ]; then
-    	echo "Found group $GROUP..."
+        echo "Found group $GROUP..."
         LINE=" [![${GROUP}](https://sling.apache.org/badges/group-$GROUP.svg)](https://github.com/apache/sling-aggregator/blob/master/docs/groups/$GROUP.md)"
         prepend
     fi
@@ -78,40 +86,40 @@ function update_badges () {
             echo "No Maven release found for $ARTIFACT_ID"
         else
             echo "Adding Maven release badge for $ARTIFACT_ID"
-            LINE=" [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.sling/$ARTIFACT_ID/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22$ARTIFACT_ID%22)"
+            LINE=" [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.sling/$ARTIFACT_ID/badge.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22$ARTIFACT_ID%22)"
             prepend
         fi
     fi
     
-    COVERAGE_CONTENTS=$(curl -L https://img.shields.io/jenkins/c/https/builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8.svg)
-    if [[ $COVERAGE_CONTENTS = *"inaccessible"* || $COVERAGE_CONTENTS = *"invalid"* ]]; then
+    COVERAGE_CONTENTS=$(curl -L https://img.shields.io/jenkins/c/https/builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master.svg)
+    if [[ $COVERAGE_CONTENTS = *"job or coverage not found"* ]]; then
         echo "No coverage reports found for $REPO_NAME"
     else
         echo "Adding coverage badge for $REPO_NAME"
-        LINE=" [![Coverage Status](https://img.shields.io/jenkins/c/https/builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8.svg)](https://builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8/)"
+        LINE=" [![Coverage Status](https://img.shields.io/jenkins/c/https/builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master.svg)](https://builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master)"
         prepend
     fi
     
-    TEST_CONTENTS=$(curl -L https://img.shields.io/jenkins/t/https/builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8.svg)
+    TEST_CONTENTS=$(curl -L https://img.shields.io/jenkins/t/https/builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master.svg)
     if [[ $TEST_CONTENTS = *"inaccessible"* || $TEST_CONTENTS = *"invalid"* ]]; then
         echo "No tests found for $REPO_NAME"
     else
         echo "Adding test badge for $REPO_NAME"
-        LINE=" [![Test Status](https://img.shields.io/jenkins/t/https/builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8.svg)](https://builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8/test_results_analyzer/)"
+        LINE=" [![Test Status](https://img.shields.io/jenkins/t/https/builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master.svg)](https://builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master/test_results_analyzer/)"
         prepend
     fi
     
-    BUILD_RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" https://builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8)
+    BUILD_RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" https://builds.apache.org/job/Sling/job/sling-$REPO_NAME/)
     if [ "$BUILD_RESPONSE" != "404" ]; then
         echo "Adding build badge for $REPO_NAME"
-        LINE=" [![Build Status](https://builds.apache.org/buildStatus/icon?job=sling-$REPO_NAME-1.8)](https://builds.apache.org/view/S-Z/view/Sling/job/sling-$REPO_NAME-1.8)"
+        LINE=" [![Build Status](https://builds.apache.org/buildStatus/icon?job=Sling/sling-$REPO_NAME/master)](https://builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master)"
         prepend
     else
         echo "No build found for $REPO_NAME"
     fi
     
     echo "Adding logo for $REPO_NAME"
-    LINE="[<img src=\"http://sling.apache.org/res/logos/sling.png\"/>](http://sling.apache.org)\n\n"
+    LINE="[<img src=\"https://sling.apache.org/res/logos/sling.png\"/>](https://sling.apache.org)\n\n"
     prepend
     
     grip -b > /dev/null 2>&1 & > /dev/null
@@ -140,7 +148,7 @@ function handle_repo () {
     cd $REPO
     if [ ! -e "README.md" ]; then
         echo "No README.md found in $REPO"
-    elif grep -q "http:\/\/sling\.apache\.org\/res\/logos\/sling\.png" "README.md"; then
+    elif egrep -q "https?:\/\/sling\.apache\.org\/res\/logos\/sling\.png" "README.md"; then
         echo "Badge already present on $REPO, overwrite (Y/N)?"
         read OVERWRITE
         if [ "$OVERWRITE" == "Y" ]; then
