@@ -39,6 +39,7 @@
   <project path='org-apache-sling-capabilities-jcr' name='sling-org-apache-sling-capabilities-jcr.git' />
   <project path='org-apache-sling-cassandra' name='sling-org-apache-sling-cassandra.git' />
   <project path='org-apache-sling-clam' name='sling-org-apache-sling-clam.git' />
+  <project path='org-apache-sling-committer-cli' name='sling-org-apache-sling-committer-cli.git' />
   <project path='org-apache-sling-commons-cache-api' name='sling-org-apache-sling-commons-cache-api.git' />
   <project path='org-apache-sling-commons-cache-container-test' name='sling-org-apache-sling-commons-cache-container-test.git' />
   <project path='org-apache-sling-commons-cache-ehcache' name='sling-org-apache-sling-commons-cache-ehcache.git' />
