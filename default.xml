@@ -296,6 +296,7 @@
   <project path='org-apache-sling-validation-test-services' name='sling-org-apache-sling-validation-test-services.git' groups='validation' />
   <project path='org-apache-sling-xss' name='sling-org-apache-sling-xss.git' />
   <project path='parent' name='sling-parent.git' />
+  <project path='project-archetype' name='sling-project-archetype.git' />
   <project path='samples' name='sling-samples.git' />
   <project path='scriptingbundle-maven-plugin' name='sling-scriptingbundle-maven-plugin.git' />
   <project path='servlet-archetype' name='sling-servlet-archetype.git' />
