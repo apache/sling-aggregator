@@ -66,6 +66,7 @@
   <project path='org-apache-sling-commons-testing' name='sling-org-apache-sling-commons-testing.git' />
   <project path='org-apache-sling-commons-threaddump' name='sling-org-apache-sling-commons-threaddump.git' />
   <project path='org-apache-sling-commons-threads' name='sling-org-apache-sling-commons-threads.git' />
+  <project path='org-apache-sling-connection-timeout-agent' name='sling-org-apache-sling-connection-timeout-agent.git' />
   <project path='org-apache-sling-crankstart-launcher' name='sling-org-apache-sling-crankstart-launcher.git' groups='crankstart' />
   <project path='org-apache-sling-crankstart-test-model' name='sling-org-apache-sling-crankstart-test-model.git' groups='crankstart' />
   <project path='org-apache-sling-crankstart-test-services' name='sling-org-apache-sling-crankstart-test-services.git' groups='crankstart' />
