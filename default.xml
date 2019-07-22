@@ -67,6 +67,11 @@
   <project path='org-apache-sling-commons-threaddump' name='sling-org-apache-sling-commons-threaddump.git' />
   <project path='org-apache-sling-commons-threads' name='sling-org-apache-sling-commons-threads.git' />
   <project path='org-apache-sling-connection-timeout-agent' name='sling-org-apache-sling-connection-timeout-agent.git' />
+  <project path='org-apache-sling-contentparser-api' name='sling-org-apache-sling-contentparser-api.git' groups='contentparser' />
+  <project path='org-apache-sling-contentparser-json' name='sling-org-apache-sling-contentparser-json.git' groups='contentparser' />
+  <project path='org-apache-sling-contentparser-testutils' name='sling-org-apache-sling-contentparser-testutils.git' groups='contentparser' />
+  <project path='org-apache-sling-contentparser-xml' name='sling-org-apache-sling-contentparser-xml.git' groups='contentparser' />
+  <project path='org-apache-sling-contentparser-xml-jcr' name='sling-org-apache-sling-contentparser-xml-jcr.git' groups='contentparser' />
   <project path='org-apache-sling-crankstart-launcher' name='sling-org-apache-sling-crankstart-launcher.git' groups='crankstart' />
   <project path='org-apache-sling-crankstart-test-model' name='sling-org-apache-sling-crankstart-test-model.git' groups='crankstart' />
   <project path='org-apache-sling-crankstart-test-services' name='sling-org-apache-sling-crankstart-test-services.git' groups='crankstart' />
@@ -104,6 +109,7 @@
   <project path='org-apache-sling-feature-apiregions-model' name='sling-org-apache-sling-feature-apiregions-model.git' groups='feature' />
   <project path='org-apache-sling-feature-applicationbuilder' name='sling-org-apache-sling-feature-applicationbuilder.git' groups='feature' />
   <project path='org-apache-sling-feature-cpconverter' name='sling-org-apache-sling-feature-cpconverter.git' groups='feature' />
+  <project path='org-apache-sling-feature-diff' name='sling-org-apache-sling-feature-diff.git' groups='feature' />
   <project path='org-apache-sling-feature-extension-apiregions' name='sling-org-apache-sling-feature-extension-apiregions.git' groups='feature' />
   <project path='org-apache-sling-feature-extension-content' name='sling-org-apache-sling-feature-extension-content.git' groups='feature' />
   <project path='org-apache-sling-feature-inventoryprinter' name='sling-org-apache-sling-feature-inventoryprinter.git' groups='feature' />
@@ -111,6 +117,7 @@
   <project path='org-apache-sling-feature-karaf' name='sling-org-apache-sling-feature-karaf.git' groups='feature' />
   <project path='org-apache-sling-feature-launcher' name='sling-org-apache-sling-feature-launcher.git' groups='feature' />
   <project path='org-apache-sling-feature-modelconverter' name='sling-org-apache-sling-feature-modelconverter.git' groups='feature' />
+  <project path='org-apache-sling-feature-r2f' name='sling-org-apache-sling-feature-r2f.git' groups='feature' />
   <project path='org-apache-sling-feature-resolver' name='sling-org-apache-sling-feature-resolver.git' groups='feature' />
   <project path='org-apache-sling-featureflags' name='sling-org-apache-sling-featureflags.git' />
   <project path='org-apache-sling-file-optimization' name='sling-org-apache-sling-file-optimization.git' />
