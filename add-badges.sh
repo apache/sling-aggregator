@@ -9,13 +9,10 @@ function ctrl_c() {
 }
 
 function stop_grip() {
-    if [[ "${GRIP_PID}" -gt "-1" ]]; then
-        GRIP_PID_CHECK=$(pgrep -f grip)
-        if [[ ${GRIP_PID} -eq ${GRIP_PID_CHECK} ]]; then
-            echo "Stoping grip..."
-            kill $GRIP_PID 2>&1 > /dev/null
-            echo "Done."
-        fi
+    if [[ (-n "$GRIP_PID") && ("$GRIP_PID" != "-1") ]]; then
+        echo "Stoping grip..."
+        kill -9 $GRIP_PID 2>&1 > /dev/null
+        echo "Done."
     fi
 }
 
@@ -141,17 +138,13 @@ function update_badges () {
     LINE="[<img src=\"https://sling.apache.org/res/logos/sling.png\"/>](https://sling.apache.org)\n\n"
     prepend
     
-    grip --quiet -b 
-    if [[ "$?" -ne "0" ]]; then
-        GRIP_PID=$(pgrep -f grip)
-        if [[ -n ${GRIP_PID} ]]; then
-            echo "Found previous grip server running"
-        fi
-    else
-        GRIP_PID=$!
+
+    GRIP_PID=$(pgrep -f grip)
+    if [[ -n $GRIP_PID} ]]; then
+        stop_grip 2>&1 > /dev/null
     fi
-    
-    
+    grip -b > /dev/null 2>&1 & > /dev/null
+    GRIP_PID=$(pgrep -f grip)
     if [[ ${AUTO_COMMIT} -eq 1 ]]; then
         RESULTS="C"
     else
