@@ -1,4 +1,23 @@
-#!/bin/bash
+#!/usr/bin/env bash
+trap ctrl_c INT
+
+GRIP_PID=-1
+
+function ctrl_c() {
+    stop_grip
+    exit 0
+}
+
+function stop_grip() {
+    if [[ "${GRIP_PID}" -gt "-1" ]]; then
+        GRIP_PID_CHECK=$(pgrep -f grip)
+        if [[ ${GRIP_PID} -eq ${GRIP_PID_CHECK} ]]; then
+            echo "Stoping grip..."
+            kill $GRIP_PID 2>&1 > /dev/null
+            echo "Done."
+        fi
+    fi
+}
 
 SCRIPT_DIR=$PWD
 
@@ -122,8 +141,16 @@ function update_badges () {
     LINE="[<img src=\"https://sling.apache.org/res/logos/sling.png\"/>](https://sling.apache.org)\n\n"
     prepend
     
-    grip -b > /dev/null 2>&1 & > /dev/null
-    PID=$!
+    grip --quiet -b 
+    if [[ "$?" -ne "0" ]]; then
+        GRIP_PID=$(pgrep -f grip)
+        if [[ -n ${GRIP_PID} ]]; then
+            echo "Found previous grip server running"
+        fi
+    else
+        GRIP_PID=$!
+    fi
+    
     
     if [[ ${AUTO_COMMIT} -eq 1 ]]; then
         RESULTS="C"
@@ -135,7 +162,6 @@ function update_badges () {
         fi
         read RESULTS
     fi
-    kill $PID 2>&1 > /dev/null
     
     if [ "$RESULTS" == "C" ]; then
         git commit README.md -m "Updating badges for ${REPO_NAME}"
@@ -145,6 +171,7 @@ function update_badges () {
         git checkout -- README.md
         overwrite_readme
     fi
+    stop_grip
 }
 
 function handle_repo () {
