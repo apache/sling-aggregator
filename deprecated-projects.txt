@@ -1,3 +1,4 @@
+org-apache-sling-jcr-contentparser
 org-apache-sling-ide-api
 org-apache-sling-ide-api-test
 org-apache-sling-ide-artifacts
