@@ -110,20 +110,20 @@ void addRepo(File repoFolder, Node manifest) {
 void calculateBadges(Map project){
     def badges = [];
     if(getStatus("https://builds.apache.org/job/Sling/job/sling-"+project.folder+"/") != 404) {
-        println "Adding Build Status badge..."
+        println "Adding build status badge..."
         badges.push("&#32;[![Build Status](https://builds.apache.org/buildStatus/icon?job=Sling/sling-"+project.folder+"/master)](https://builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master)")
     }
     if(responseValid("https://img.shields.io/jenkins/t/https/builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master.svg")){
-        println "Adding test badge..."
+        println "Adding test status badge..."
         badges.push("&#32;[![Test Status](https://img.shields.io/jenkins/t/https/builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master.svg?longCache=true)](https://builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master/test_results_analyzer/)")
     }
     if(responseValid("https://img.shields.io/jenkins/c/https/builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master.svg")){
-        println "Adding coverage badge..."
+        println "Adding coverage status badge..."
         badges.push("&#32;[![Coverage Status](https://img.shields.io/jenkins/c/https/builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master.svg?longCache=true)]((https://builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master/)")
     }
-    if(getStatus("https://www.javadoc.io/badge/org.apache.sling/"+project.folder+".svg") != 404) {
-        println "Adding Build Status badge..."
-        badges.push("&#32;[![JavaDocs](https://www.javadoc.io/badge/org.apache.sling/"+project.folder+".svg)](https://www.javadoc.io/doc/org.apache.sling/"+project.folder+")")
+    if(getStatus("https://www.javadoc.io/badge/org.apache.sling/"+project.artifactId+".svg") != 404) {
+        println "Adding JavaDoc badge..."
+        badges.push("&#32;[![JavaDoc](https://www.javadoc.io/badge/org.apache.sling/"+project.artifactId+".svg)](https://www.javadoc.io/doc/org.apache.sling/"+project.folder+")")
     }
     if(responseValid("https://maven-badges.herokuapp.com/maven-central/org.apache.sling/"+project.artifactId+"/badge.svg")){
         println "Adding Maven release badge..."
