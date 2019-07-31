@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(pwd)
+SCRIPT_DIR=$PWD
 
 AUTO_COMMIT=0
 
@@ -39,16 +39,18 @@ function update_badges () {
     
     STATUS=""
     for module in `cat $SCRIPT_DIR/contrib-projects.txt`; do
-        if [[ $project == $REPO_NAME ]]; then
+        if [[ "$module" == "$REPO_NAME" ]]; then
             STATUS="contrib"
+            echo "Found status $STATUS..."
             break
         fi
     done
 
     if [[ -z $STATUS ]]; then
         for module in `cat $SCRIPT_DIR/deprecated-projects.txt`; do
-            if [[ $project == $REPO_NAME ]]; then
+            if [[ "$module" == "$REPO_NAME" ]]; then
                 STATUS="deprecated"
+                echo "Found status $STATUS..."
                 break
             fi
         done
