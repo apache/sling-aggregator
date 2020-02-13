@@ -13,6 +13,7 @@
   <project path='initial-content-archetype' name='sling-initial-content-archetype.git' />
   <project path='jcrinstall-bundle-archetype' name='sling-jcrinstall-bundle-archetype.git' />
   <project path='jspc-maven-plugin' name='sling-jspc-maven-plugin.git' />
+  <project path='kickstart-maven-plugin' name='sling-kickstart-maven-plugin.git' />
   <project path='launchpad-comparator' name='sling-launchpad-comparator.git' />
   <project path='launchpad-debian' name='sling-launchpad-debian.git' />
   <project path='launchpad-standalone-archetype' name='sling-launchpad-standalone-archetype.git' />
@@ -29,6 +30,7 @@
   <project path='org-apache-sling-auth-xing-login' name='sling-org-apache-sling-auth-xing-login.git' groups='auth' />
   <project path='org-apache-sling-auth-xing-oauth' name='sling-org-apache-sling-auth-xing-oauth.git' groups='auth' />
   <project path='org-apache-sling-bnd-models' name='sling-org-apache-sling-bnd-models.git' groups='bnd' />
+  <project path='org-apache-sling-bnd-plugin-headers-parameters-remove' name='sling-org-apache-sling-bnd-plugin-headers-parameters-remove.git' groups='bnd' />
   <project path='org-apache-sling-bnd-plugins' name='sling-org-apache-sling-bnd-plugins.git' groups='bnd' />
   <project path='org-apache-sling-bundleresource-impl' name='sling-org-apache-sling-bundleresource-impl.git' />
   <project path='org-apache-sling-caconfig-api' name='sling-org-apache-sling-caconfig-api.git' groups='caconfig' />
@@ -50,6 +52,7 @@
   <project path='org-apache-sling-commons-classloader' name='sling-org-apache-sling-commons-classloader.git' />
   <project path='org-apache-sling-commons-compiler' name='sling-org-apache-sling-commons-compiler.git' />
   <project path='org-apache-sling-commons-contentdetection' name='sling-org-apache-sling-commons-contentdetection.git' />
+  <project path='org-apache-sling-commons-crypto' name='sling-org-apache-sling-commons-crypto.git' />
   <project path='org-apache-sling-commons-fsclassloader' name='sling-org-apache-sling-commons-fsclassloader.git' />
   <project path='org-apache-sling-commons-html' name='sling-org-apache-sling-commons-html.git' />
   <project path='org-apache-sling-commons-jcr-file' name='sling-org-apache-sling-commons-jcr-file.git' />
@@ -191,6 +194,7 @@
   <project path='org-apache-sling-karaf-features' name='sling-org-apache-sling-karaf-features.git' groups='karaf' />
   <project path='org-apache-sling-karaf-integration-tests' name='sling-org-apache-sling-karaf-integration-tests.git' groups='karaf' />
   <project path='org-apache-sling-karaf-launchpad-oak-tar-integration-tests' name='sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git' groups='karaf' />
+  <project path='org-apache-sling-kickstart' name='sling-org-apache-sling-kickstart.git' />
   <project path='org-apache-sling-launchpad-api' name='sling-org-apache-sling-launchpad-api.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-base' name='sling-org-apache-sling-launchpad-base.git' groups='launchpad' />
   <project path='org-apache-sling-launchpad-contrib-testing' name='sling-org-apache-sling-launchpad-contrib-testing.git' groups='launchpad' />
