@@ -315,7 +315,7 @@
   <project path='servlet-archetype' name='sling-servlet-archetype.git' />
   <project path='site' name='sling-site.git' />
   <project path='slingfeature-maven-plugin' name='sling-slingfeature-maven-plugin.git' />
-  <project path='slingpackages' name='sling-slingpackager.git' />
+  <project path='slingpackager' name='sling-slingpackager.git' />
   <project path='slingstart-archetype' name='sling-slingstart-archetype.git' />
   <project path='slingstart-maven-plugin' name='sling-slingstart-maven-plugin.git' />
   <project path='taglib-archetype' name='sling-taglib-archetype.git' />
