@@ -7,6 +7,7 @@
   <project path='apache-sling-jar-resource-bundle' name='sling-apache-sling-jar-resource-bundle.git' />
   <project path='archetype-parent' name='sling-archetype-parent.git' />
   <project path='bundle-archetype' name='sling-bundle-archetype.git' />
+  <project path='content-package-archetype' name='sling-content-package-archetype.git' />
   <project path='feature-converter-maven-plugin' name='sling-feature-converter-maven-plugin.git' />
   <project path='htl-maven-plugin' name='sling-htl-maven-plugin.git' />
   <project path='ide-tooling' name='sling-ide-tooling.git' />
