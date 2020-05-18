@@ -132,6 +132,7 @@
   <project path='org-apache-sling-fragment-ws' name='sling-org-apache-sling-fragment-ws.git' groups='fragment' />
   <project path='org-apache-sling-fragment-xml' name='sling-org-apache-sling-fragment-xml.git' groups='fragment' />
   <project path='org-apache-sling-fsresource' name='sling-org-apache-sling-fsresource.git' />
+  <project path='org-apache-sling-graphql-core' name='sling-org-apache-sling-graphql-core.git' />
   <project path='org-apache-sling-hapi' name='sling-org-apache-sling-hapi.git' />
   <project path='org-apache-sling-hapi-client' name='sling-org-apache-sling-hapi-client.git' groups='hapi' />
   <project path='org-apache-sling-hapi-samplecontent' name='sling-org-apache-sling-hapi-samplecontent.git' groups='hapi' />
@@ -148,6 +149,7 @@
   <project path='org-apache-sling-installer-core' name='sling-org-apache-sling-installer-core.git' groups='installer' />
   <project path='org-apache-sling-installer-factory-configuration' name='sling-org-apache-sling-installer-factory-configuration.git' groups='installer' />
   <project path='org-apache-sling-installer-factory-deploymentpackage' name='sling-org-apache-sling-installer-factory-deploymentpackage.git' groups='installer' />
+  <project path='org-apache-sling-installer-factory-feature' name='sling-org-apache-sling-installer-factory-feature.git' groups='installer' />
   <project path='org-apache-sling-installer-factory-model' name='sling-org-apache-sling-installer-factory-model.git' groups='installer' />
   <project path='org-apache-sling-installer-factory-packages' name='sling-org-apache-sling-installer-factory-packages.git' groups='installer' />
   <project path='org-apache-sling-installer-factory-subsystems' name='sling-org-apache-sling-installer-factory-subsystems.git' groups='installer' />
