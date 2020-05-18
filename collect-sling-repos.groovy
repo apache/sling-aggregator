@@ -55,7 +55,7 @@ while ( link ) {
     // find link to next page, if applicable
     link = null
     
-    def links = conn.headerFields['Link']
+    def links = conn.headerFields['Link'] ?: conn.headerFields['link']
     if ( links ) {
         def next = links[0].split(',').find{ it.contains('rel="next"') }
         link = next != null ? next.find('<(.*)>').replaceAll('<|>',''): null
