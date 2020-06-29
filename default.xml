@@ -9,6 +9,7 @@
   <project path='bundle-archetype' name='sling-bundle-archetype.git' />
   <project path='content-package-archetype' name='sling-content-package-archetype.git' />
   <project path='feature-converter-maven-plugin' name='sling-feature-converter-maven-plugin.git' />
+  <project path='feature-launcher-maven-plugin' name='sling-feature-launcher-maven-plugin.git' />
   <project path='htl-maven-plugin' name='sling-htl-maven-plugin.git' />
   <project path='ide-tooling' name='sling-ide-tooling.git' />
   <project path='initial-content-archetype' name='sling-initial-content-archetype.git' />
@@ -174,6 +175,7 @@
   <project path='org-apache-sling-jcr-js-nodetypes' name='sling-org-apache-sling-jcr-js-nodetypes.git' groups='jcr' />
   <project path='org-apache-sling-jcr-oak-server' name='sling-org-apache-sling-jcr-oak-server.git' groups='jcr' />
   <project path='org-apache-sling-jcr-packageinit' name='sling-org-apache-sling-jcr-packageinit.git' groups='jcr' />
+  <project path='org-apache-sling-jcr-presence' name='sling-org-apache-sling-jcr-presence.git' groups='jcr' />
   <project path='org-apache-sling-jcr-registration' name='sling-org-apache-sling-jcr-registration.git' groups='jcr' />
   <project path='org-apache-sling-jcr-repoinit' name='sling-org-apache-sling-jcr-repoinit.git' groups='jcr' />
   <project path='org-apache-sling-jcr-repository-it-resource-versioning' name='sling-org-apache-sling-jcr-repository-it-resource-versioning.git' groups='jcr' />
