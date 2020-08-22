@@ -107,12 +107,21 @@ function update_badges () {
         fi
     fi
     
-    COVERAGE_CONTENTS=$(curl -L https://img.shields.io/jenkins/c/https/builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master.svg)
-    if [[ $COVERAGE_CONTENTS = *"job or coverage not found"* ]]; then
+    STATUS_CONTENTS=$(curl -L "https://sonarcloud.io/api/project_badges/measure?project=apache_sling-$REPO_NAME&metric=alert_status")
+    if [[ $STATUS_CONTENTS = *"Measure has not been found"* ]]; then
+        echo "No sonarcloud status found for $REPO_NAME"
+    else
+        echo "Adding sonarcloud status badge for $REPO_NAME"
+        LINE=" [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=apache_sling-$REPO_NAME&metric=alert_status)](https://sonarcloud.io/dashboard?id=apache_sling-$REPO_NAME)"
+        prepend
+    fi
+    
+    COVERAGE_CONTENTS=$(curl -L "https://sonarcloud.io/api/project_badges/measure?project=apache_sling-$REPO_NAME&metric=coverage")
+    if [[ $COVERAGE_CONTENTS = *"Measure has not been found"* ]]; then
         echo "No coverage reports found for $REPO_NAME"
     else
         echo "Adding coverage badge for $REPO_NAME"
-        LINE=" [![Coverage Status](https://img.shields.io/jenkins/c/https/builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master.svg)](https://builds.apache.org/job/Sling/job/sling-$REPO_NAME/job/master)"
+        LINE=" [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=apache_sling-$REPO_NAME&metric=coverage)](https://sonarcloud.io/dashboard?id=apache_sling-$REPO_NAME)"
         prepend
     fi
     
