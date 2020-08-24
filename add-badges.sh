@@ -130,14 +130,14 @@ function update_badges () {
         echo "No tests found for $REPO_NAME"
     else
         echo "Adding test badge for $REPO_NAME"
-        LINE=" ![Test Status](https://img.shields.io/jenkins/tests.svg?jobUrl=https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/)](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/test/?width=800&height=600)"
+        LINE=" [![Test Status](https://img.shields.io/jenkins/tests.svg?jobUrl=https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/)](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/test/?width=800&height=600)"
         prepend
     fi
     
     BUILD_RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/badge/icon)
     if [ "$BUILD_RESPONSE" != "404" ]; then
         echo "Adding build badge for $REPO_NAME"
-        LINE="  [![Build Status](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/badge/icon)](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/)"
+        LINE=" [![Build Status](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/badge/icon)](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/)"
         prepend
     else
         echo "No build found for $REPO_NAME"
