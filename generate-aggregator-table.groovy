@@ -109,17 +109,17 @@ void addRepo(File repoFolder, Node manifest) {
 
 void calculateBadges(Map project){
     def badges = [];
-    if(getStatus("https://builds.apache.org/job/Sling/job/sling-"+project.folder+"/") != 404) {
+    if(getStatus("https://ci-builds.apache.org/job/Sling/job/modules/job/sling-"+project.folder+"/job/master/badge/icon") != 404) {
         println "Adding build status badge..."
-        badges.push("&#32;[![Build Status](https://builds.apache.org/buildStatus/icon?job=Sling/sling-"+project.folder+"/master)](https://builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master)")
+        badges.push("&#32;[![Build Status](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-"+project.folder+"/job/master/badge/icon)](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-"+project.folder+"/job/master)")
     }
-    if(responseValid("https://img.shields.io/jenkins/t/https/builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master.svg")){
+    if(responseValid("https://img.shields.io/jenkins/tests.svg?jobUrl=https://ci-builds.apache.org/job/Sling/job/modules/job/sling-"+project.folder+"/job/master/")){
         println "Adding test status badge..."
-        badges.push("&#32;[![Test Status](https://img.shields.io/jenkins/t/https/builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master.svg?longCache=true)](https://builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master/test_results_analyzer/)")
+        badges.push("&#32;[![Test Status](https://img.shields.io/jenkins/tests.svg?jobUrl=https://ci-builds.apache.org/job/Sling/job/modules/job/sling-"+project.folder+"/job/master/)](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-"+project.folder+"/job/master/test/?width=800&height=600)")
     }
-    if(responseValid("https://img.shields.io/jenkins/c/https/builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master.svg")){
+    if(responseValid("https://sonarcloud.io/api/project_badges/measure?project=apache_sling-"+project.folder+"&metric=coverage")){
         println "Adding coverage status badge..."
-        badges.push("&#32;[![Coverage Status](https://img.shields.io/jenkins/c/https/builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master.svg?longCache=true)]((https://builds.apache.org/job/Sling/job/sling-"+project.folder+"/job/master/)")
+        badges.push("&#32;[![Coverage Status](https://sonarcloud.io/api/project_badges/measure?project=apache_sling-"+project.folder+"&metric=coverage)](https://sonarcloud.io/dashboard?id=apache_sling-"+project.folder+")")
     }
     if(getStatus("https://www.javadoc.io/badge/org.apache.sling/"+project.artifactId+".svg") != 404) {
         println "Adding JavaDoc badge..."
