@@ -19,13 +19,14 @@ This list is generated from the script [generate-aggregator-table.groovy](https:
 
 ### Updating Module Badges
 
-We have a simple script to update the badges in GitHub's README.md files. To update all repositories:
+We have a simple script to update the badges in GitHub's README.md files. To update a single repository:
 
-    ./add-badges.sh [SLING_DIR]
+    ./generate-project-badges.groovy [REPO_DIR]
+    
+To update all repositories:
 
-To update a single repository:
+    repo forall -c '[SLING_DIR]/aggregator/generate-project-badges.groovy .'
 
-    ./add-badges.sh [SLING_DIR] [REPO_NAME]
 
 ### Updating the Aggregator List
 
