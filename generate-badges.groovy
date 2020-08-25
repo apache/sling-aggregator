@@ -19,7 +19,6 @@
 
 /* groovylint-disable JavaIoPackageAccess */
 
-
 ArrayList calculateBadges(Map project) {
     def badges = []
     if (getStatus("https://ci-builds.apache.org/job/Sling/job/modules/job/sling-${project.folder}/job/master/badge/icon") != 404) {
@@ -38,13 +37,15 @@ ArrayList calculateBadges(Map project) {
         println 'Adding quality status badge...'
         badges.add("&#32;[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=apache_sling-${project.folder}&metric=alert_status)](https://sonarcloud.io/dashboard?id=apache_sling-${project.folder})")
     }
-    if (getStatus("https://www.javadoc.io/badge/org.apache.sling/${project.artifactId}.svg") != 404) {
-        println 'Adding JavaDoc badge...'
-        badges.add("&#32;[![JavaDoc](https://www.javadoc.io/badge/org.apache.sling/${project.artifactId}.svg)](https://www.javadoc.io/doc/org.apache.sling/${project.folder})")
-    }
-    if (responseValid("https://maven-badges.herokuapp.com/maven-central/org.apache.sling/$project.artifactId/badge.svg")) {
-        println 'Adding Maven release badge...'
-        badges.add("&#32;[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.sling/${project.artifactId}/badge.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22${project.artifactId}%22)")
+    if (project.artifactId) {
+        if (getStatus("https://www.javadoc.io/badge/org.apache.sling/${project.artifactId}.svg") != 404) {
+            println 'Adding JavaDoc badge...'
+            badges.add("&#32;[![JavaDoc](https://www.javadoc.io/badge/org.apache.sling/${project.artifactId}.svg)](https://www.javadoc.io/doc/org.apache.sling/${project.folder})")
+        }
+        if (responseValid("https://maven-badges.herokuapp.com/maven-central/org.apache.sling/${project.artifactId}/badge.svg")) {
+            println 'Adding Maven release badge...'
+            badges.add("&#32;[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.sling/${project.artifactId}/badge.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22${project.artifactId}%22)")
+        }
     }
     if (project.contrib) {
         println 'Adding contrib status badge...'
@@ -126,11 +127,11 @@ boolean responseValid(String url) {
     def get = new URL(url).openConnection()
     get.setRequestProperty('User-Agent', 'curl/7.35.0')
     int rc = get.responseCode
-    println 'Retrieved status ' + rc + ' from ' + url
     if (rc == 200) {
+        println "Retrieved valid response code ${rc} from ${url}"
         String text = get.inputStream.text
         if (text.contains('inaccessible') || text.contains('not found') || text.contains('not been found')
-            || text.contains('invalid') || text.contains('unknown')) {
+            || text.contains('invalid') || text.contains('unknown') || text.contains('no tests found')) {
             println "Retrieved invalid response from ${url}"
             return false
             }

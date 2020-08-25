@@ -39,30 +39,41 @@ GroovyShell shell = new GroovyShell()
 @SourceURI
 URI sourceUri
 
+File getReadMe(File projectDir) {
+    def readmes = []
+    projectDir.eachFile(FileType.FILES, {
+        if (it.path =~ ~/(?i)readme.md/) {
+            readmes.push(it.name)
+        }
+    })
+    return new File(projectDir, readmes[0])
+}
+
 def genBadges = shell.parse(new File(Paths.get(sourceUri).parent.toString(), './generate-badges.groovy').text)
 String projectDir = args[0]
 projectDir = new File(projectDir).getCanonicalPath()
 
-println 'Generate Project Badges!'
+println '\n\nGenerate Project Badges!'
 println '-------------------------'
 
 println "Updating badges in ${projectDir}"
 
 Map project = genBadges.parseMavenPom(new File(projectDir), new File(Paths.get(sourceUri).parent.toString()))
-if (project != null) {
-    def badges = genBadges.calculateBadges(project)
-    badges.add(' [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)')
-
-    File readme = new File(projectDir, 'README.md')
-    def lines = readme.readLines()
-
-    println "Updating ${readme}"
-    lines[3..(lines.size() - 1)].join('\n')
-    readme.newWriter().withWriter { w ->
-        w << "[![Apache Sling](https://sling.apache.org/res/logos/sling.png)](https://sling.apache.org)\n\n${badges.join('')}\n${lines[3..(lines.size - 1)].join('\n')}\n"
-    }
-
-    println 'Update complete!'
-} else {
-    println 'No pom.xml found, skipping...'
+if (project == null) {
+    project = [:]
+    project.folder = new File(projectDir).name
 }
+def badges = genBadges.calculateBadges(project)
+badges.add(' [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)')
+
+File readme = getReadMe(new File(projectDir))
+def lines = readme.readLines()
+
+println "Updating ${readme}"
+lines[3..(lines.size() - 1)].join('\n')
+readme.newWriter().withWriter { w ->
+        w << "[![Apache Sling](https://sling.apache.org/res/logos/sling.png)](https://sling.apache.org)\n\n${badges.join('')}\n${lines[3..(lines.size - 1)].join('\n')}\n"
+}
+
+println 'Update complete!'
+
