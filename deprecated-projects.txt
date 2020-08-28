@@ -42,5 +42,6 @@ org-apache-sling-samples-post-servlet-extensions
 org-apache-sling-samples-slingbucks
 org-apache-sling-samples-testing-bundle-with-it
 org-apache-sling-samples-testing-module-with-it
+org-apache-sling-scripting-sightly-models-provider
 org-apache-sling-testing-tools
 test-servlet-archetype-project
