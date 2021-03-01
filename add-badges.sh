@@ -130,7 +130,7 @@ function update_badges () {
         echo "No tests found for $REPO_NAME"
     else
         echo "Adding test badge for $REPO_NAME"
-        LINE=" ![Test Status](https://img.shields.io/jenkins/tests.svg?jobUrl=https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/)](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/test/?width=800&height=600)"
+        LINE=" [![Test Status](https://img.shields.io/jenkins/tests.svg?jobUrl=https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/)](https://ci-builds.apache.org/job/Sling/job/modules/job/sling-$REPO_NAME/job/master/test/?width=800&height=600)"
         prepend
     fi
     
