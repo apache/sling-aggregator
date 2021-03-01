@@ -251,6 +251,7 @@
   <project path='org-apache-sling-resourceresolver' name='sling-org-apache-sling-resourceresolver.git' />
   <project path='org-apache-sling-rewriter' name='sling-org-apache-sling-rewriter.git' />
   <project path='org-apache-sling-scripting-api' name='sling-org-apache-sling-scripting-api.git' groups='scripting' />
+    <project path='org-apache-sling-scripting-spi' name='sling-org-apache-sling-scripting-spi.git' groups='scripting' />
   <project path='org-apache-sling-scripting-bundle-tracker' name='sling-org-apache-sling-scripting-bundle-tracker.git' groups='scripting' />
   <project path='org-apache-sling-scripting-bundle-tracker-it' name='sling-org-apache-sling-scripting-bundle-tracker-it.git' groups='scripting' />
   <project path='org-apache-sling-scripting-console' name='sling-org-apache-sling-scripting-console.git' groups='scripting' />
