@@ -30,6 +30,7 @@
   <project path='org-apache-sling-app-cms' name='sling-org-apache-sling-app-cms.git' />
   <project path='org-apache-sling-auth-core' name='sling-org-apache-sling-auth-core.git' groups='auth' />
   <project path='org-apache-sling-auth-form' name='sling-org-apache-sling-auth-form.git' groups='auth' />
+  <project path='org-apache-sling-auth-saml2' name='sling-org-apache-sling-auth-saml2.git' groups='auth' />
   <project path='org-apache-sling-auth-xing-api' name='sling-org-apache-sling-auth-xing-api.git' groups='auth' />
   <project path='org-apache-sling-auth-xing-login' name='sling-org-apache-sling-auth-xing-login.git' groups='auth' />
   <project path='org-apache-sling-auth-xing-oauth' name='sling-org-apache-sling-auth-xing-oauth.git' groups='auth' />
@@ -178,6 +179,7 @@
   <project path='org-apache-sling-jcr-jackrabbit-usermanager' name='sling-org-apache-sling-jcr-jackrabbit-usermanager.git' groups='jcr' />
   <project path='org-apache-sling-jcr-jcr-wrapper' name='sling-org-apache-sling-jcr-jcr-wrapper.git' groups='jcr' />
   <project path='org-apache-sling-jcr-js-nodetypes' name='sling-org-apache-sling-jcr-js-nodetypes.git' groups='jcr' />
+  <project path='org-apache-sling-jcr-maintenance' name='sling-org-apache-sling-jcr-maintenance.git' groups='jcr' />
   <project path='org-apache-sling-jcr-oak-server' name='sling-org-apache-sling-jcr-oak-server.git' groups='jcr' />
   <project path='org-apache-sling-jcr-packageinit' name='sling-org-apache-sling-jcr-packageinit.git' groups='jcr' />
   <project path='org-apache-sling-jcr-presence' name='sling-org-apache-sling-jcr-presence.git' groups='jcr' />
@@ -251,7 +253,6 @@
   <project path='org-apache-sling-resourceresolver' name='sling-org-apache-sling-resourceresolver.git' />
   <project path='org-apache-sling-rewriter' name='sling-org-apache-sling-rewriter.git' />
   <project path='org-apache-sling-scripting-api' name='sling-org-apache-sling-scripting-api.git' groups='scripting' />
-    <project path='org-apache-sling-scripting-spi' name='sling-org-apache-sling-scripting-spi.git' groups='scripting' />
   <project path='org-apache-sling-scripting-bundle-tracker' name='sling-org-apache-sling-scripting-bundle-tracker.git' groups='scripting' />
   <project path='org-apache-sling-scripting-bundle-tracker-it' name='sling-org-apache-sling-scripting-bundle-tracker-it.git' groups='scripting' />
   <project path='org-apache-sling-scripting-console' name='sling-org-apache-sling-scripting-console.git' groups='scripting' />
@@ -276,6 +277,7 @@
   <project path='org-apache-sling-scripting-sightly-runtime' name='sling-org-apache-sling-scripting-sightly-runtime.git' groups='scripting' />
   <project path='org-apache-sling-scripting-sightly-testing' name='sling-org-apache-sling-scripting-sightly-testing.git' groups='scripting' />
   <project path='org-apache-sling-scripting-sightly-testing-content' name='sling-org-apache-sling-scripting-sightly-testing-content.git' groups='scripting' />
+  <project path='org-apache-sling-scripting-spi' name='sling-org-apache-sling-scripting-spi.git' groups='scripting' />
   <project path='org-apache-sling-scripting-thymeleaf' name='sling-org-apache-sling-scripting-thymeleaf.git' groups='scripting' />
   <project path='org-apache-sling-scripting-xproc' name='sling-org-apache-sling-scripting-xproc.git' groups='scripting' />
   <project path='org-apache-sling-security' name='sling-org-apache-sling-security.git' />
