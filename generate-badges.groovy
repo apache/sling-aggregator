@@ -57,7 +57,7 @@ ArrayList calculateBadges(Map project) {
     }
     if (project.group) {
         println 'Adding group badge...'
-        badges.add("&#32;[![${project.group}](https://sling.apache.org/badges/group-${project.group}.svg)](https://github.com/apache/sling-aggregator/blob/master/docs/group/${project.group}.md)")
+        badges.add("&#32;[![${project.group}](https://sling.apache.org/badges/group-${project.group}.svg)](https://github.com/apache/sling-aggregator/blob/master/docs/groups/${project.group}.md)")
     }
     return badges
 }
