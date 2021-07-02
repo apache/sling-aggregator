@@ -95,9 +95,9 @@ xml.manifest() {
     slingRepos.forEach { repo ->
         def groups = getGroups(repo, groupMap)
         if ( groups ) {
-            project(path: repoPath(repo), name: "${repo.name}.git", groups: getGroups(repo, groupMap))
+            project(path: repoPath(repo), name: "${repo.name}.git", description: "${repo.description}", groups: getGroups(repo, groupMap))
         } else {
-            project(path: repoPath(repo), name: "${repo.name}.git")
+            project(path: repoPath(repo), name: "${repo.name}.git", description: "${repo.description}")
         }
     }
 }
