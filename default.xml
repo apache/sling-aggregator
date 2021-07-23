@@ -139,7 +139,8 @@
   <project path='org-apache-sling-fragment-ws' name='sling-org-apache-sling-fragment-ws.git' description='Apache Sling System Bundle Extension WS APIs' groups='fragment' />
   <project path='org-apache-sling-fragment-xml' name='sling-org-apache-sling-fragment-xml.git' description='Apache Sling System Bundle Extension XML APIs' groups='fragment' />
   <project path='org-apache-sling-fsresource' name='sling-org-apache-sling-fsresource.git' description='Apache Sling File System Resource Provider' />
-  <project path='org-apache-sling-graphql-core' name='sling-org-apache-sling-graphql-core.git' description='Apache Sling GraphQL Core' />
+  <project path='org-apache-sling-graphql-core' name='sling-org-apache-sling-graphql-core.git' description='Apache Sling GraphQL Core' groups='graphql' />
+  <project path='org-apache-sling-graphql-schema-aggregator' name='sling-org-apache-sling-graphql-schema-aggregator.git' description='Apache Sling GraphQL Schema Aggregator' groups='graphql' />
   <project path='org-apache-sling-hapi' name='sling-org-apache-sling-hapi.git' description='Apache Sling Hypermedia API tools' />
   <project path='org-apache-sling-hapi-client' name='sling-org-apache-sling-hapi-client.git' description='Apache Sling Hypermedia API client-side tools' groups='hapi' />
   <project path='org-apache-sling-hapi-samplecontent' name='sling-org-apache-sling-hapi-samplecontent.git' description='Apache Sling Hypermedia Api Sample Content' groups='hapi' />
