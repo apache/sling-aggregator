@@ -23,4 +23,4 @@ git pull origin master
 cat ../aggregator/$SEC > $SEC
 git add $SEC
 git commit -m "SLING-10676 - add or update $SEC"
-# TODO git push origin master
+git push origin master
