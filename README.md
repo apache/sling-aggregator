@@ -6,8 +6,12 @@
 
 This module is part of the [Apache Sling](https://sling.apache.org) project.
 
-It provides an XML file that lists all Sling modules, to allow for tools like `repo` to process multiple repositories at once, along
+It provides an [XML file](./default.xml) that lists all Sling modules, to allow for tools like `repo` to process multiple repositories at once, along
 with some utility scripts to help manage our large number of repositories.
+
+To update that XML file to include new Sling modules, run the [collect-sling-repos.groovy](./collect-sling-repos.groovy)
+(with `-a`, see comments in the script), check the diffs of the [default.xml](./default.xml)
+file and push the result if ok.
 
 The list of modules is in a self-explaining format and can also be used in your own scripts if preferred.
 
