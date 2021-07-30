@@ -6,7 +6,8 @@
 
 This module is part of the [Apache Sling](https://sling.apache.org) project.
 
-It provides an XML file that lists all Sling modules, to allow for tools like `repo` to process multiple repositories at once.
+It provides an XML file that lists all Sling modules, to allow for tools like `repo` to process multiple repositories at once, along
+with some utility scripts to help manage our large number of repositories.
 
 The list of modules is in a self-explaining format and can also be used in your own scripts if preferred.
 
@@ -74,6 +75,13 @@ the latest revision but does not check out a specific branch.
 The output is a flat list of all Sling modules.
 
 The `-j 16` flag instructs repo to run 16 parallel checkout jobs and is added for performance reasons only.
+
+### Be careful with "mass pushes" to repositories
+ASF Infra notes that pushing to many Git repositories quickly can cause heavy load on their github
+push queue. It's good to coordinate with them when doing such things, and/or add a few seconds of delay
+between pushes. A delay of 5 seconds between each push worked well for [SLING-10676](https://issues.apache.org/jira/browse/SLING-10676)
+when removing the SECURITY.md files that had been added unnecessarily, while adding them had raised alarms
+due to fast pushes without delays.
 
 ### Updating the list of modules
 
