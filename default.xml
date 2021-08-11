@@ -314,6 +314,7 @@
   <project path='org-apache-sling-testing-serversetup' name='sling-org-apache-sling-testing-serversetup.git' description='Apache Sling Server Setup Tools' groups='testing' />
   <project path='org-apache-sling-testing-sling-mock' name='sling-org-apache-sling-testing-sling-mock.git' description='Apache Sling Testing Sling Mock' groups='testing' />
   <project path='org-apache-sling-testing-sling-mock-oak' name='sling-org-apache-sling-testing-sling-mock-oak.git' description='Apache Sling Testing Sling Mock Jackrabbit Oak-based Resource Resolver' groups='testing' />
+  <project path='org-apache-sling-thumbnails' name='sling-org-apache-sling-thumbnails.git' description='Apache Sling Thumbnails' />
   <project path='org-apache-sling-tooling-support-install' name='sling-org-apache-sling-tooling-support-install.git' description='Apache Sling Tooling Support Install' groups='tooling' />
   <project path='org-apache-sling-tooling-support-source' name='sling-org-apache-sling-tooling-support-source.git' description='Apache Sling Tooling Support Source' groups='tooling' />
   <project path='org-apache-sling-tracer' name='sling-org-apache-sling-tracer.git' description='Apache Sling Log Tracer' />
