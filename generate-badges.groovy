@@ -40,7 +40,7 @@ ArrayList calculateBadges(Map project) {
     if (project.artifactId) {
         if (getStatus("https://www.javadoc.io/badge/org.apache.sling/${project.artifactId}.svg") != 404) {
             println 'Adding JavaDoc badge...'
-            badges.add("&#32;[![JavaDoc](https://www.javadoc.io/badge/org.apache.sling/${project.artifactId}.svg)](https://www.javadoc.io/doc/org.apache.sling/${project.folder})")
+            badges.add("&#32;[![JavaDoc](https://www.javadoc.io/badge/org.apache.sling/${project.artifactId}.svg)](https://www.javadoc.io/doc/org.apache.sling/${project.artifactId})")
         }
         if (responseValid("https://maven-badges.herokuapp.com/maven-central/org.apache.sling/${project.artifactId}/badge.svg")) {
             println 'Adding Maven release badge...'
