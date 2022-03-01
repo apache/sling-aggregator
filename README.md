@@ -83,6 +83,10 @@ The output is a flat list of all Sling modules.
 
 The `-j 16` flag instructs repo to run 16 parallel checkout jobs and is added for performance reasons only.
 
+#### Eclipse EGit Support
+
+When trying to add such a repository with EGit in the local working copy is not detected due to the way that `repo` works with symbolic links. This has been reported in [Eclipse Bugzilla Issue #579042](https://bugs.eclipse.org/bugs/show_bug.cgi?id=579042).
+
 ### Be careful with "mass pushes" to repositories
 ASF Infra notes that pushing to many Git repositories quickly can cause heavy load on their github
 push queue. It's good to coordinate with them when doing such things, and/or add a few seconds of delay
