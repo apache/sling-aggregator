@@ -44,4 +44,5 @@ org-apache-sling-samples-testing-bundle-with-it
 org-apache-sling-samples-testing-module-with-it
 org-apache-sling-scripting-sightly-models-provider
 org-apache-sling-testing-tools
+org-apache-sling-scripting-console
 test-servlet-archetype-project
