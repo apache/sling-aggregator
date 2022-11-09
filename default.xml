@@ -20,6 +20,7 @@
   <project path='launchpad-debian' name='sling-launchpad-debian.git' description='Apache Sling Launchpad Debian Package Builder' />
   <project path='launchpad-standalone-archetype' name='sling-launchpad-standalone-archetype.git' description='Apache Sling Launchpad Standalone Archetype' />
   <project path='launchpad-webapp-archetype' name='sling-launchpad-webapp-archetype.git' description='Apache Sling Launchpad Webapp Archetype' />
+  <project path='maven-enforcer-rules' name='sling-maven-enforcer-rules.git' description='Apache sling' />
   <project path='maven-jcrocm-plugin' name='sling-maven-jcrocm-plugin.git' description='Apache Sling Maven JCROCM Plugin (deprecated)' />
   <project path='maven-launchpad-plugin' name='sling-maven-launchpad-plugin.git' description='Apache Sling Maven Launchpad Plugin' />
   <project path='maven-plugin' name='sling-maven-plugin.git' description='Apache Sling Maven Plugin' />
@@ -95,14 +96,14 @@
   <project path='org-apache-sling-discovery-standalone' name='sling-org-apache-sling-discovery-standalone.git' description='Apache Sling Discovery Standalone Implementation' groups='discovery' />
   <project path='org-apache-sling-discovery-support' name='sling-org-apache-sling-discovery-support.git' description='Apache Sling Discovery Support Bundle' groups='discovery' />
   <project path='org-apache-sling-distribution-api' name='sling-org-apache-sling-distribution-api.git' description='Apache Sling Distribution API' groups='distribution' />
-  <project path='org-apache-sling-distribution-avro-serializer' name='sling-org-apache-sling-distribution-avro-serializer.git' description='Apache Sling Distribution Avro Serializer' groups='distribution' />
+  <project path='org-apache-sling-distribution-avro-serializer' name='sling-org-apache-sling-distribution-avro-serializer.git' description='Apache Sling Distribution Avro Serializer (deprecated)' groups='distribution' />
   <project path='org-apache-sling-distribution-core' name='sling-org-apache-sling-distribution-core.git' description='Apache Sling Distribution Core' groups='distribution' />
   <project path='org-apache-sling-distribution-it' name='sling-org-apache-sling-distribution-it.git' description='Apache Sling Distribution Integration Tests' groups='distribution' />
   <project path='org-apache-sling-distribution-journal' name='sling-org-apache-sling-distribution-journal.git' description='Apache Sling Journal based Content Distribution - Core' groups='distribution' />
   <project path='org-apache-sling-distribution-journal-it' name='sling-org-apache-sling-distribution-journal-it.git' description='Apache Sling Distribution Journal - ITs' groups='distribution' />
   <project path='org-apache-sling-distribution-journal-kafka' name='sling-org-apache-sling-distribution-journal-kafka.git' description='Apache Sling Journal Messaging based on Apache Kafka' groups='distribution' />
   <project path='org-apache-sling-distribution-journal-messages' name='sling-org-apache-sling-distribution-journal-messages.git' description='Apache Sling Journal based Content Distribution - Messages' groups='distribution' />
-  <project path='org-apache-sling-distribution-kryo-serializer' name='sling-org-apache-sling-distribution-kryo-serializer.git' description='Apache Sling Distribution Kryo Serializer' groups='distribution' />
+  <project path='org-apache-sling-distribution-kryo-serializer' name='sling-org-apache-sling-distribution-kryo-serializer.git' description='Apache Sling Distribution Kryo Serializer (deprecated)' groups='distribution' />
   <project path='org-apache-sling-distribution-sample' name='sling-org-apache-sling-distribution-sample.git' description='Apache Sling Distribution Sample' groups='distribution' />
   <project path='org-apache-sling-dynamic-include' name='sling-org-apache-sling-dynamic-include.git' description='Apache Sling Dynamic Include' />
   <project path='org-apache-sling-engine' name='sling-org-apache-sling-engine.git' description='Apache Sling Engine Implementation' />
@@ -218,7 +219,7 @@
   <project path='org-apache-sling-launchpad-test-fragment' name='sling-org-apache-sling-launchpad-test-fragment.git' description='Apache Sling Launchpad Testing Fragment Bundle' groups='launchpad' />
   <project path='org-apache-sling-launchpad-test-services' name='sling-org-apache-sling-launchpad-test-services.git' description='Apache Sling Launchpad Testing Services' groups='launchpad' />
   <project path='org-apache-sling-launchpad-test-services-war' name='sling-org-apache-sling-launchpad-test-services-war.git' description='Apache Sling Launchpad Testing Services WAR' groups='launchpad' />
-  <project path='org-apache-sling-launchpad-testing' name='sling-org-apache-sling-launchpad-testing.git' description='Apache Sling Launchpad Testing' groups='launchpad' />
+  <project path='org-apache-sling-launchpad-testing' name='sling-org-apache-sling-launchpad-testing.git' description='Apache Sling Launchpad Testing (deprecated)' groups='launchpad' />
   <project path='org-apache-sling-launchpad-testing-war' name='sling-org-apache-sling-launchpad-testing-war.git' description='Apache Sling Launchpd Testing WAR (deprecated)' groups='launchpad' />
   <project path='org-apache-sling-models-api' name='sling-org-apache-sling-models-api.git' description='Apache Sling Models API' groups='models' />
   <project path='org-apache-sling-models-caconfig' name='sling-org-apache-sling-models-caconfig.git' description='Apache Sling Models Context-Aware Configuration' groups='models' />
@@ -256,7 +257,7 @@
   <project path='org-apache-sling-scripting-api' name='sling-org-apache-sling-scripting-api.git' description='Apache Sling Scripting API' groups='scripting' />
   <project path='org-apache-sling-scripting-bundle-tracker' name='sling-org-apache-sling-scripting-bundle-tracker.git' description='Apache Sling Scripting Bundle Tracker (deprecated)' groups='scripting' />
   <project path='org-apache-sling-scripting-bundle-tracker-it' name='sling-org-apache-sling-scripting-bundle-tracker-it.git' description='Apache Sling Scripting Bundle Tracker Integration Tests' groups='scripting' />
-  <project path='org-apache-sling-scripting-console' name='sling-org-apache-sling-scripting-console.git' description='Apache Sling Script Console' groups='scripting' />
+  <project path='org-apache-sling-scripting-console' name='sling-org-apache-sling-scripting-console.git' description='Apache Sling Script Console (deprecated)' groups='scripting' />
   <project path='org-apache-sling-scripting-core' name='sling-org-apache-sling-scripting-core.git' description='Apache Sling Scripting Core implementation' groups='scripting' />
   <project path='org-apache-sling-scripting-el-api' name='sling-org-apache-sling-scripting-el-api.git' description='Apache Sling Wrapper Bundle for Apache Tomcat EL API' groups='scripting' />
   <project path='org-apache-sling-scripting-esx' name='sling-org-apache-sling-scripting-esx.git' description='Apache Sling Scripting ESX' groups='scripting' />
