@@ -66,4 +66,5 @@ if ( !jiraOptions ) {
 def builder = new YamlBuilder()
 builder(asfYaml)
 
+targetFile.text = ''
 targetFile << builder
