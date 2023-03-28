@@ -18,6 +18,7 @@
  */
 import groovy.cli.commons.CliBuilder
 import groovy.yaml.YamlBuilder
+import groovy.yaml.YamlSlurper
 
 def cli = new CliBuilder(usage: 'update-asf-yaml.groovy target-repo')
 
@@ -33,20 +34,36 @@ if ( !targetDir.isDirectory() ) {
     System.exit 1
 }
 def targetFile = new File(targetDir, '.asf.yaml')
+def asfYaml = [:]
 if ( !targetFile.exists() ) {
     println "Target file ${targetFile} does not exist, creating with defaults"
-    def builder = new YamlBuilder()
-    builder {
-        github {
-            autolink_jira 'SLING', 'OAK', 'JCR', 'JCRVLT', 'INFRA','FELIX', 'MNG'
-        }
-        notifications {
-            jira_options 'link'
-        }
-    }
-
-    targetFile << builder
 } else {
-    println "Target file ${targetFile} exists, but merging is not implemented"
-    System.exit 2
+    println "Target file ${targetFile} exists, merging with defaults"
+    def parser = new YamlSlurper()
+    asfYaml = parser.parse(targetFile)
 }
+
+if  ( ! asfYaml['github'] ) {
+    asfYaml['github'] = [:]
+}
+
+// set up autolinks ; note: missing merge
+// https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features#Git.asf.yamlfeatures-AutolinksforJira
+def autolinks = asfYaml['github']['autolinks']
+if ( ! autolinks ) {
+    asfYaml['github']['autolink_jira'] = ['SLING', 'OAK', 'JCR', 'JCRVLT', 'INFRA','FELIX', 'MNG']
+}
+
+if ( !asfYaml['notifications'] ) {
+    asfYaml['notifications'] = [:]
+}
+// set up jira integration
+// https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features#Git.asf.yamlfeatures-Jiranotificationoptions
+def jiraOptions = asfYaml['notifications']['jira_options']
+if ( !jiraOptions ) {
+    asfYaml['notifications']['jira_options'] = 'link'
+}
+def builder = new YamlBuilder()
+builder(asfYaml)
+
+targetFile << builder
