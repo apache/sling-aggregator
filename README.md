@@ -35,6 +35,23 @@ To update all repositories:
 
     repo forall -c '[SLING_DIR]/aggregator/generate-project-badges.groovy .'
 
+### Updating the .asf.yaml files
+
+We maintain a set of [.asf.yaml](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features) files, to set reasonable defaults for all Sling GitHub repositories. To make maintenance simple, we use the [scripts/update-asf-yaml.groovy](scripts/update-asf-yaml.groovy).
+
+The script accepts a list of directories to generate or update the listing file for.
+
+```bash
+$ repo list --path-only | xargs groovy aggregator/scripts/update-asf-yaml.groovy
+$ repo forall -c 'git add .asf.yaml'
+$ repo forall -c 'git commit -m "SLING-12345 Updating .asf.yaml" -m "Detailed description"'
+```
+
+Once you are happy with what the commits look like you can push the changes, with a delay, using
+
+```bash
+$ repo for all -c 'sleep 3; git push'
+```
 
 ### Updating the Aggregator List
 
