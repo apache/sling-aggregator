@@ -20,6 +20,7 @@ import groovy.cli.commons.CliBuilder
 import groovy.yaml.YamlBuilder
 import groovy.yaml.YamlSlurper
 
+def documentSeparator = "---\n"
 def cli = new CliBuilder(usage: 'update-asf-yaml.groovy <directories...>')
 
 def options = cli.parse(args)
@@ -69,5 +70,9 @@ options.arguments().forEach { arg ->
     builder(asfYaml)
 
     targetFile.text = ''
-    targetFile << builder
+    def rawYaml = builder.toString()
+    if ( rawYaml.startsWith(documentSeparator) ) {
+        rawYaml = rawYaml - documentSeparator
+    }
+    targetFile << rawYaml
 }
