@@ -47,11 +47,7 @@ $ repo forall -c 'git add .asf.yaml'
 $ repo forall -c 'git commit -m "SLING-12345 Updating .asf.yaml" -m "Detailed description"'
 ```
 
-Once you are happy with what the commits look like you can push the changes, with a delay, using
-
-```bash
-$ repo for all -c 'sleep 3; git push'
-```
+Once you are happy with what the commits look like you can push the changes, with a delay. Note that variations of `repo forall -c "sleep 5; git push"` don't seem to work, more research is required.
 
 ### Updating the Aggregator List
 
