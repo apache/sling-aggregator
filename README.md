@@ -113,6 +113,10 @@ That list is found in the [default.xml](./default.xml) file.
 
 It is used to generate the [list of Git Repositories](http://sling.apache.org/repolist.html) on our website.
 
+**Install Groovy with with [ASDF](https://asdf-vm.com/)**
+
+    asdf install
+
 **Install Groovy on Mac with [Homebrew](https://brew.sh)**
 
     brew install groovy
