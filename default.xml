@@ -9,7 +9,7 @@
   <project path='bundle-archetype' name='sling-bundle-archetype.git' description='Apache Sling Bundle Archetype' />
   <project path='content-package-archetype' name='sling-content-package-archetype.git' description='Apache Sling Content Package Archetype' />
   <project path='feature-converter-maven-plugin' name='sling-feature-converter-maven-plugin.git' description='Apache Sling Feature Converter Maven Plugin' />
-  <project path='feature-launcher-maven-plugin' name='sling-feature-launcher-maven-plugin.git' description='Apache Sling Feature Laucher Maven Plugin' />
+  <project path='feature-launcher-maven-plugin' name='sling-feature-launcher-maven-plugin.git' description='Apache Sling Feature Launcher Maven Plugin' />
   <project path='htl-maven-plugin' name='sling-htl-maven-plugin.git' description='Apache Sling HTL Maven Plugin' />
   <project path='ide-tooling' name='sling-ide-tooling.git' description='Apache Sling IDE Tools' />
   <project path='initial-content-archetype' name='sling-initial-content-archetype.git' description='Apache Sling Initial Content Archetype' />
@@ -71,9 +71,12 @@
   <project path='org-apache-sling-commons-messaging' name='sling-org-apache-sling-commons-messaging.git' description='Apache Sling Commons Messaging' />
   <project path='org-apache-sling-commons-messaging-mail' name='sling-org-apache-sling-commons-messaging-mail.git' description='Apache Sling Commons Messaging Mail' />
   <project path='org-apache-sling-commons-metrics' name='sling-org-apache-sling-commons-metrics.git' description='Apache Sling Metrics' />
+  <project path='org-apache-sling-commons-metrics-prometheus' name='sling-org-apache-sling-commons-metrics-prometheus.git' description='Apache sling' />
   <project path='org-apache-sling-commons-metrics-rrd4j' name='sling-org-apache-sling-commons-metrics-rrd4j.git' description='Apache Sling RRD4J metrics reporter' />
   <project path='org-apache-sling-commons-mime' name='sling-org-apache-sling-commons-mime.git' description='Apache Sling Commons MIME type mapping support' />
   <project path='org-apache-sling-commons-osgi' name='sling-org-apache-sling-commons-osgi.git' description='Apache Sling Commons OSGi support' />
+  <project path='org-apache-sling-commons-permissions' name='sling-org-apache-sling-commons-permissions.git' description='Apache sling' />
+  <project path='org-apache-sling-commons-permissions-sling' name='sling-org-apache-sling-commons-permissions-sling.git' description='Apache sling' />
   <project path='org-apache-sling-commons-scheduler' name='sling-org-apache-sling-commons-scheduler.git' description='Apache Sling Commons Scheduler Support' />
   <project path='org-apache-sling-commons-testing' name='sling-org-apache-sling-commons-testing.git' description='Apache Sling Testing Utilities' />
   <project path='org-apache-sling-commons-threaddump' name='sling-org-apache-sling-commons-threaddump.git' description='Apache Sling Thread Dumper' />
@@ -146,7 +149,7 @@
   <project path='org-apache-sling-hapi-client' name='sling-org-apache-sling-hapi-client.git' description='Apache Sling Hypermedia API client-side tools' groups='hapi' />
   <project path='org-apache-sling-hapi-samplecontent' name='sling-org-apache-sling-hapi-samplecontent.git' description='Apache Sling Hypermedia Api Sample Content' groups='hapi' />
   <project path='org-apache-sling-hc-annotations' name='sling-org-apache-sling-hc-annotations.git' description='Apache Sling Health Check Annotations' groups='hc' />
-  <project path='org-apache-sling-hc-api' name='sling-org-apache-sling-hc-api.git' description='Apache Sling Health Check API' groups='hc' />
+  <project path='org-apache-sling-hc-api' name='sling-org-apache-sling-hc-api.git' description='Apache Sling Health Check API (deprecated)' groups='hc' />
   <project path='org-apache-sling-hc-core' name='sling-org-apache-sling-hc-core.git' description='Apache Sling Health Check Core' groups='hc' />
   <project path='org-apache-sling-hc-it' name='sling-org-apache-sling-hc-it.git' description='Apache Sling Health Check Integration Tests' groups='hc' />
   <project path='org-apache-sling-hc-junit-bridge' name='sling-org-apache-sling-hc-junit-bridge.git' description='Apache Sling Health Check JUnit Bridge' groups='hc' />
@@ -240,6 +243,7 @@
   <project path='org-apache-sling-pipes' name='sling-org-apache-sling-pipes.git' description='Apache Sling Pipes' />
   <project path='org-apache-sling-provisioning-model' name='sling-org-apache-sling-provisioning-model.git' description='Apache Sling Provisioning Model' />
   <project path='org-apache-sling-query' name='sling-org-apache-sling-query.git' description='Apache Sling Query' />
+  <project path='org-apache-sling-repoinit-filevault-validator' name='sling-org-apache-sling-repoinit-filevault-validator.git' description='Apache sling' groups='repoinit' />
   <project path='org-apache-sling-repoinit-it' name='sling-org-apache-sling-repoinit-it.git' description='Apache Sling RepoInit Integration Tests(deprecated)' groups='repoinit' />
   <project path='org-apache-sling-repoinit-parser' name='sling-org-apache-sling-repoinit-parser.git' description='Apache Sling RepoInit Parser' groups='repoinit' />
   <project path='org-apache-sling-reqanalyzer' name='sling-org-apache-sling-reqanalyzer.git' description='Apache Sling Request Processing Analyzer' />
