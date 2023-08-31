@@ -72,7 +72,7 @@ def lines = readme.readLines()
 println "Updating ${readme}"
 lines[3..(lines.size() - 1)].join('\n')
 readme.newWriter().withWriter { w ->
-        w << "[![Apache Sling](https://sling.apache.org/res/logos/sling.png)](https://sling.apache.org)\n\n${badges.join('')}\n${lines[3..(lines.size - 1)].join('\n')}\n"
+        w << "[![Apache Sling](https://sling.apache.org/res/logos/sling.png)](https://sling.apache.org)\n\n${badges.join('')}\n${lines[3..(lines.size() - 1)].join('\n')}\n"
 }
 
 println 'Update complete!'
