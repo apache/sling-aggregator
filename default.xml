@@ -20,7 +20,7 @@
   <project path='launchpad-debian' name='sling-launchpad-debian.git' description='Apache Sling Launchpad Debian Package Builder' />
   <project path='launchpad-standalone-archetype' name='sling-launchpad-standalone-archetype.git' description='Apache Sling Launchpad Standalone Archetype' />
   <project path='launchpad-webapp-archetype' name='sling-launchpad-webapp-archetype.git' description='Apache Sling Launchpad Webapp Archetype' />
-  <project path='maven-enforcer-rules' name='sling-maven-enforcer-rules.git' description='Apache sling' />
+  <project path='maven-enforcer-rules' name='sling-maven-enforcer-rules.git' description='Apache Sling Maven Enforcer Rules' />
   <project path='maven-jcrocm-plugin' name='sling-maven-jcrocm-plugin.git' description='Apache Sling Maven JCROCM Plugin (deprecated)' />
   <project path='maven-launchpad-plugin' name='sling-maven-launchpad-plugin.git' description='Apache Sling Maven Launchpad Plugin' />
   <project path='maven-plugin' name='sling-maven-plugin.git' description='Apache Sling Maven Plugin' />
@@ -65,13 +65,14 @@
   <project path='org-apache-sling-commons-html' name='sling-org-apache-sling-commons-html.git' description='Apache Sling Commons HTML Utilities' />
   <project path='org-apache-sling-commons-jcr-file' name='sling-org-apache-sling-commons-jcr-file.git' description='Apache Sling Commons JCR File' />
   <project path='org-apache-sling-commons-johnzon' name='sling-org-apache-sling-commons-johnzon.git' description='Apache Sling Commons Johnzon Wrapper Library' />
+  <project path='org-apache-sling-commons-json' name='sling-org-apache-sling-commons-json.git' description='Apache Sling Commons JSON (deprecated)' />
   <project path='org-apache-sling-commons-log' name='sling-org-apache-sling-commons-log.git' description='Apache Sling Commons Log' />
   <project path='org-apache-sling-commons-log-webconsole' name='sling-org-apache-sling-commons-log-webconsole.git' description='Apache Sling Log WebConsole' />
   <project path='org-apache-sling-commons-logservice' name='sling-org-apache-sling-commons-logservice.git' description='Apache Sling OSGi LogService Implementation' />
   <project path='org-apache-sling-commons-messaging' name='sling-org-apache-sling-commons-messaging.git' description='Apache Sling Commons Messaging' />
   <project path='org-apache-sling-commons-messaging-mail' name='sling-org-apache-sling-commons-messaging-mail.git' description='Apache Sling Commons Messaging Mail' />
   <project path='org-apache-sling-commons-metrics' name='sling-org-apache-sling-commons-metrics.git' description='Apache Sling Metrics' />
-  <project path='org-apache-sling-commons-metrics-prometheus' name='sling-org-apache-sling-commons-metrics-prometheus.git' description='Apache sling' />
+  <project path='org-apache-sling-commons-metrics-prometheus' name='sling-org-apache-sling-commons-metrics-prometheus.git' description='Apache Sling Commons Prometheus Metrics Exporter' />
   <project path='org-apache-sling-commons-metrics-rrd4j' name='sling-org-apache-sling-commons-metrics-rrd4j.git' description='Apache Sling RRD4J metrics reporter' />
   <project path='org-apache-sling-commons-mime' name='sling-org-apache-sling-commons-mime.git' description='Apache Sling Commons MIME type mapping support' />
   <project path='org-apache-sling-commons-osgi' name='sling-org-apache-sling-commons-osgi.git' description='Apache Sling Commons OSGi support' />
@@ -120,6 +121,7 @@
   <project path='org-apache-sling-extensions-webconsolesecurityprovider' name='sling-org-apache-sling-extensions-webconsolesecurityprovider.git' description='Apache Sling Web Console Security Provider' />
   <project path='org-apache-sling-feature' name='sling-org-apache-sling-feature.git' description='Apache Sling OSGi Feature Model' />
   <project path='org-apache-sling-feature-analyser' name='sling-org-apache-sling-feature-analyser.git' description='Apache Sling Feature Model Analyser' groups='feature' />
+  <project path='org-apache-sling-feature-analyser-classes' name='sling-org-apache-sling-feature-analyser-classes.git' description='Apache Sling Feature Model Analyser For Classes' groups='feature' />
   <project path='org-apache-sling-feature-apiregions' name='sling-org-apache-sling-feature-apiregions.git' description='Apache Sling Feature API Regions Runtime' groups='feature' />
   <project path='org-apache-sling-feature-apiregions-model' name='sling-org-apache-sling-feature-apiregions-model.git' description='Apache Sling Feature Model API Regions' groups='feature' />
   <project path='org-apache-sling-feature-applicationbuilder' name='sling-org-apache-sling-feature-applicationbuilder.git' description='Apache Sling Feature Model Application Builder' groups='feature' />
@@ -241,15 +243,17 @@
   <project path='org-apache-sling-paxexam-util' name='sling-org-apache-sling-paxexam-util.git' description='Apache Sling Pax Exam Utilities' />
   <project path='org-apache-sling-performance' name='sling-org-apache-sling-performance.git' description='Apache Sling Performance Test Tools Reactor' />
   <project path='org-apache-sling-pipes' name='sling-org-apache-sling-pipes.git' description='Apache Sling Pipes' />
+  <project path='org-apache-sling-providertype-bnd-plugin' name='sling-org-apache-sling-providertype-bnd-plugin.git' description='Apache Sling Provider Type Checker Bnd Plugin' />
   <project path='org-apache-sling-provisioning-model' name='sling-org-apache-sling-provisioning-model.git' description='Apache Sling Provisioning Model' />
   <project path='org-apache-sling-query' name='sling-org-apache-sling-query.git' description='Apache Sling Query' />
-  <project path='org-apache-sling-repoinit-filevault-validator' name='sling-org-apache-sling-repoinit-filevault-validator.git' description='Apache sling' groups='repoinit' />
+  <project path='org-apache-sling-repoinit-filevault-validator' name='sling-org-apache-sling-repoinit-filevault-validator.git' description='Apache Sling Repoinit FileVault Validator' groups='repoinit' />
   <project path='org-apache-sling-repoinit-it' name='sling-org-apache-sling-repoinit-it.git' description='Apache Sling RepoInit Integration Tests(deprecated)' groups='repoinit' />
   <project path='org-apache-sling-repoinit-parser' name='sling-org-apache-sling-repoinit-parser.git' description='Apache Sling RepoInit Parser' groups='repoinit' />
   <project path='org-apache-sling-reqanalyzer' name='sling-org-apache-sling-reqanalyzer.git' description='Apache Sling Request Processing Analyzer' />
   <project path='org-apache-sling-resource-editor' name='sling-org-apache-sling-resource-editor.git' description='Apache Sling Resource Editor' />
   <project path='org-apache-sling-resource-filter' name='sling-org-apache-sling-resource-filter.git' description='Apache Sling Resource Filter' />
   <project path='org-apache-sling-resource-inventory' name='sling-org-apache-sling-resource-inventory.git' description='Apache Sling Inventory Printer Based on Resources' />
+  <project path='org-apache-sling-resource-observation-annotations' name='sling-org-apache-sling-resource-observation-annotations.git' description='Apache sling' />
   <project path='org-apache-sling-resource-presence' name='sling-org-apache-sling-resource-presence.git' description='Apache Sling Resource Presence' />
   <project path='org-apache-sling-resourceaccesssecurity' name='sling-org-apache-sling-resourceaccesssecurity.git' description='Apache Sling Resource Access Security' />
   <project path='org-apache-sling-resourceaccesssecurity-it' name='sling-org-apache-sling-resourceaccesssecurity-it.git' description='Apache Sling Resource Access Security Integration Tests' />
