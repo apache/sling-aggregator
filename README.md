@@ -47,7 +47,12 @@ $ repo forall -c 'git add .asf.yaml'
 $ repo forall -c 'git commit -m "SLING-12345 Updating .asf.yaml" -m "Detailed description"'
 ```
 
-Once you are happy with what the commits look like you can push the changes, with a delay. Note that variations of `repo forall -c "sleep 5; git push"` don't seem to work, more research is required.
+Once you are happy with what the commits look like you can push the changes, with a delay. It is recommended to use the provided `repo-push-with-delay.sh` script
+from the root of the repo checkout.
+
+```bash
+$ aggregator/scripts/repo-push-with-delay.sh
+```
 
 ### Updating the Aggregator List
 
@@ -101,11 +106,15 @@ The `-j 16` flag instructs repo to run 16 parallel checkout jobs and is added fo
 When trying to add such a repository with EGit in the local working copy is not detected due to the way that `repo` works with symbolic links. This has been reported in [Eclipse Bugzilla Issue #579042](https://bugs.eclipse.org/bugs/show_bug.cgi?id=579042).
 
 ### Be careful with "mass pushes" to repositories
+
 ASF Infra notes that pushing to many Git repositories quickly can cause heavy load on their github
-push queue. It's good to coordinate with them when doing such things, and/or add a few seconds of delay
-between pushes. A delay of 5 seconds between each push worked well for [SLING-10676](https://issues.apache.org/jira/browse/SLING-10676)
-when removing the SECURITY.md files that had been added unnecessarily, while adding them had raised alarms
-due to fast pushes without delays.
+push queue.
+
+Please use the provided script to push changes that affect multiple repositories:
+
+```bash
+$ aggregator/scripts/repo-push-with-delay.sh
+```
 
 ### Updating the list of modules
 
