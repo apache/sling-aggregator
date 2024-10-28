@@ -6,7 +6,7 @@ delay_seconds=5
 # Loop through each repository
 for repo in $repos; do
     pushd "$repo"
-    git push
+    git push || true
     echo "Pushed changes to $repo"
     sleep $delay_seconds
     popd
