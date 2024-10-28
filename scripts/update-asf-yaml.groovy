@@ -66,6 +66,11 @@ options.arguments().forEach { arg ->
     if ( !jiraOptions ) {
         asfYaml['notifications']['jira_options'] = 'link'
     }
+    // route sonarcloud notifications to commits@
+    def sonarcloud = asfYaml['notifications']['pullrequests_bot_sonarcloud']
+    if ( !sonarcloud ) {
+        asfYaml['notifications']['pullrequests_bot_sonarcloud'] = 'commits@sling.apache.org'
+    }
     def builder = new YamlBuilder()
     builder(asfYaml)
 
