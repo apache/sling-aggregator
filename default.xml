@@ -5,21 +5,21 @@
   <project path='adapter-annotations' name='sling-adapter-annotations.git' description='Apache Sling Adapter Annotations' />
   <project path='aggregator' name='sling-aggregator.git' description='Apache Sling Aggregator' />
   <project path='apache-sling-jar-resource-bundle' name='sling-apache-sling-jar-resource-bundle.git' description='Apache Sling JAR Resource Bundle' />
-  <project path='archetype-parent' name='sling-archetype-parent.git' description='Apache Sling Archetype Parent' />
-  <project path='bundle-archetype' name='sling-bundle-archetype.git' description='Apache Sling Bundle Archetype' />
-  <project path='content-package-archetype' name='sling-content-package-archetype.git' description='Apache Sling Content Package Archetype' />
+  <project path='archetype-parent' name='sling-archetype-parent.git' description='Apache Sling Archetype Parent (deprecated)' />
+  <project path='bundle-archetype' name='sling-bundle-archetype.git' description='Apache Sling Bundle Archetype (deprecated)' />
+  <project path='content-package-archetype' name='sling-content-package-archetype.git' description='Apache Sling Content Package Archetype (deprecated)' />
   <project path='feature-converter-maven-plugin' name='sling-feature-converter-maven-plugin.git' description='Apache Sling Feature Converter Maven Plugin' />
   <project path='feature-launcher-maven-plugin' name='sling-feature-launcher-maven-plugin.git' description='Apache Sling Feature Launcher Maven Plugin' />
   <project path='htl-maven-plugin' name='sling-htl-maven-plugin.git' description='Apache Sling HTL Maven Plugin' />
   <project path='ide-tooling' name='sling-ide-tooling.git' description='Apache Sling IDE Tools' />
-  <project path='initial-content-archetype' name='sling-initial-content-archetype.git' description='Apache Sling Initial Content Archetype' />
-  <project path='jcrinstall-bundle-archetype' name='sling-jcrinstall-bundle-archetype.git' description='Apache Sling JCRInstall Bundle Archetype' />
+  <project path='initial-content-archetype' name='sling-initial-content-archetype.git' description='Apache Sling Initial Content Archetype (deprecated)' />
+  <project path='jcrinstall-bundle-archetype' name='sling-jcrinstall-bundle-archetype.git' description='Apache Sling JCRInstall Bundle Archetype (deprecated)' />
   <project path='jspc-maven-plugin' name='sling-jspc-maven-plugin.git' description='Apache Sling Maven JSP Compiler Plugin' />
   <project path='kickstart-maven-plugin' name='sling-kickstart-maven-plugin.git' description='Apache Sling Kickstart Maven Plugin' />
   <project path='launchpad-comparator' name='sling-launchpad-comparator.git' description='Apache Sling Launchpad Comparator' />
   <project path='launchpad-debian' name='sling-launchpad-debian.git' description='Apache Sling Launchpad Debian Package Builder' />
-  <project path='launchpad-standalone-archetype' name='sling-launchpad-standalone-archetype.git' description='Apache Sling Launchpad Standalone Archetype' />
-  <project path='launchpad-webapp-archetype' name='sling-launchpad-webapp-archetype.git' description='Apache Sling Launchpad Webapp Archetype' />
+  <project path='launchpad-standalone-archetype' name='sling-launchpad-standalone-archetype.git' description='Apache Sling Launchpad Standalone Archetype (deprecated)' />
+  <project path='launchpad-webapp-archetype' name='sling-launchpad-webapp-archetype.git' description='Apache Sling Launchpad Webapp Archetype (deprecated)' />
   <project path='maven-enforcer-rules' name='sling-maven-enforcer-rules.git' description='Apache Sling Maven Enforcer Rules' />
   <project path='maven-jcrocm-plugin' name='sling-maven-jcrocm-plugin.git' description='Apache Sling Maven JCROCM Plugin (deprecated)' />
   <project path='maven-launchpad-plugin' name='sling-maven-launchpad-plugin.git' description='Apache Sling Maven Launchpad Plugin' />
@@ -337,13 +337,14 @@
   <project path='project-archetype' name='sling-project-archetype.git' description='Apache Sling Project Archetype' />
   <project path='samples' name='sling-samples.git' description='Apache Sling Samples' />
   <project path='scriptingbundle-maven-plugin' name='sling-scriptingbundle-maven-plugin.git' description='Apache Sling Scripting Bundle Maven Plugin' />
-  <project path='servlet-archetype' name='sling-servlet-archetype.git' description='Apache Sling Servlets Archetype' />
+  <project path='servlet-archetype' name='sling-servlet-archetype.git' description='Apache Sling Servlet Archetype (deprecated)' />
   <project path='site' name='sling-site.git' description='Apache Sling Website' />
   <project path='slingfeature-maven-plugin' name='sling-slingfeature-maven-plugin.git' description='Apache Sling OSGi Feature Maven Plugin' />
   <project path='slingpackager' name='sling-slingpackager.git' description='A tool for working with Apache Sling content packages' />
-  <project path='slingstart-archetype' name='sling-slingstart-archetype.git' description='Apache Sling Slingstart Archetype' />
+  <project path='slingstart-archetype' name='sling-slingstart-archetype.git' description='Apache Sling Slingstart Archetype (deprecated)' />
   <project path='slingstart-maven-plugin' name='sling-slingstart-maven-plugin.git' description='Apache Sling SlingStart Maven Plugin' />
-  <project path='taglib-archetype' name='sling-taglib-archetype.git' description='Apache Sling Taglib Archetype' />
+  <project path='taglib-archetype' name='sling-taglib-archetype.git' description='Apache Sling Taglib Archetype (deprecated)' />
+  <project path='tooling-github' name='sling-tooling-github.git' description='Apache sling' revision='main' />
   <project path='tooling-jenkins' name='sling-tooling-jenkins.git' description='Apache Sling Jenkins Tooling' />
   <project path='tooling-release' name='sling-tooling-release.git' description='Apache Sling Release Tooling' />
   <project path='tooling-scm' name='sling-tooling-scm.git' description='Apache Sling SCM Tooling' />
