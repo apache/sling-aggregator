@@ -31,6 +31,7 @@
   <project path='org-apache-sling-app-cms' name='sling-org-apache-sling-app-cms.git' description='Apache Sling - CMS Reference App' />
   <project path='org-apache-sling-auth-core' name='sling-org-apache-sling-auth-core.git' description='Apache Sling Authentication Service' groups='auth' />
   <project path='org-apache-sling-auth-form' name='sling-org-apache-sling-auth-form.git' description='Apache Sling Form Based Authentication Handler' groups='auth' />
+  <project path='org-apache-sling-auth-oauth-client' name='sling-org-apache-sling-auth-oauth-client.git' description='Apache sling' groups='auth' />
   <project path='org-apache-sling-auth-saml2' name='sling-org-apache-sling-auth-saml2.git' description='An OSGi bundle that provides a SAML2 Web Profile Service Provider Authentication for Apache Sling' groups='auth' />
   <project path='org-apache-sling-auth-xing-api' name='sling-org-apache-sling-auth-xing-api.git' description='Apache Sling Authentication XING API' groups='auth' />
   <project path='org-apache-sling-auth-xing-login' name='sling-org-apache-sling-auth-xing-login.git' description='Apache Sling Authentication XING Login' groups='auth' />
