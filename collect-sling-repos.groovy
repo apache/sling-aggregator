@@ -18,6 +18,7 @@
  */
 import groovy.json.JsonSlurper
 import groovy.xml.MarkupBuilder
+import groovy.cli.commons.CliBuilder
 
 // script to read the Apache Sling repositories using the Github API
 // it is recommended to use authentication by using the '-a' argument
