@@ -31,7 +31,7 @@
   <project path='org-apache-sling-app-cms' name='sling-org-apache-sling-app-cms.git' description='Apache Sling - CMS Reference App' />
   <project path='org-apache-sling-auth-core' name='sling-org-apache-sling-auth-core.git' description='Apache Sling Authentication Service' groups='auth' />
   <project path='org-apache-sling-auth-form' name='sling-org-apache-sling-auth-form.git' description='Apache Sling Form Based Authentication Handler' groups='auth' />
-  <project path='org-apache-sling-auth-oauth-client' name='sling-org-apache-sling-auth-oauth-client.git' description='Apache sling' groups='auth' />
+  <project path='org-apache-sling-auth-oauth-client' name='sling-org-apache-sling-auth-oauth-client.git' description='Apache Sling OAuth client' groups='auth' />
   <project path='org-apache-sling-auth-saml2' name='sling-org-apache-sling-auth-saml2.git' description='An OSGi bundle that provides a SAML2 Web Profile Service Provider Authentication for Apache Sling' groups='auth' />
   <project path='org-apache-sling-auth-xing-api' name='sling-org-apache-sling-auth-xing-api.git' description='Apache Sling Authentication XING API' groups='auth' />
   <project path='org-apache-sling-auth-xing-login' name='sling-org-apache-sling-auth-xing-login.git' description='Apache Sling Authentication XING Login' groups='auth' />
@@ -151,14 +151,14 @@
   <project path='org-apache-sling-hapi' name='sling-org-apache-sling-hapi.git' description='Apache Sling Hypermedia API tools' />
   <project path='org-apache-sling-hapi-client' name='sling-org-apache-sling-hapi-client.git' description='Apache Sling Hypermedia API client-side tools' groups='hapi' />
   <project path='org-apache-sling-hapi-samplecontent' name='sling-org-apache-sling-hapi-samplecontent.git' description='Apache Sling Hypermedia Api Sample Content' groups='hapi' />
-  <project path='org-apache-sling-hc-annotations' name='sling-org-apache-sling-hc-annotations.git' description='Apache Sling Health Check Annotations' groups='hc' />
+  <project path='org-apache-sling-hc-annotations' name='sling-org-apache-sling-hc-annotations.git' description='Apache Sling Health Check Annotations (deprecated)' groups='hc' />
   <project path='org-apache-sling-hc-api' name='sling-org-apache-sling-hc-api.git' description='Apache Sling Health Check API (deprecated)' groups='hc' />
-  <project path='org-apache-sling-hc-core' name='sling-org-apache-sling-hc-core.git' description='Apache Sling Health Check Core' groups='hc' />
-  <project path='org-apache-sling-hc-it' name='sling-org-apache-sling-hc-it.git' description='Apache Sling Health Check Integration Tests' groups='hc' />
-  <project path='org-apache-sling-hc-junit-bridge' name='sling-org-apache-sling-hc-junit-bridge.git' description='Apache Sling Health Check JUnit Bridge' groups='hc' />
-  <project path='org-apache-sling-hc-samples' name='sling-org-apache-sling-hc-samples.git' description='Apache Sling Health Check Samples' groups='hc' />
+  <project path='org-apache-sling-hc-core' name='sling-org-apache-sling-hc-core.git' description='Apache Sling Health Check Core (deprecated)' groups='hc' />
+  <project path='org-apache-sling-hc-it' name='sling-org-apache-sling-hc-it.git' description='Apache Sling Health Check Integration Tests (deprecated)' groups='hc' />
+  <project path='org-apache-sling-hc-junit-bridge' name='sling-org-apache-sling-hc-junit-bridge.git' description='Apache Sling Health Check JUnit Bridge (deprecated)' groups='hc' />
+  <project path='org-apache-sling-hc-samples' name='sling-org-apache-sling-hc-samples.git' description='Apache Sling Health Check Samples (deprecated)' groups='hc' />
   <project path='org-apache-sling-hc-support' name='sling-org-apache-sling-hc-support.git' description='Apache Sling Health Check Support Components' groups='hc' />
-  <project path='org-apache-sling-hc-webconsole' name='sling-org-apache-sling-hc-webconsole.git' description='Apache Sling Health Check Webconsole Plugin' groups='hc' />
+  <project path='org-apache-sling-hc-webconsole' name='sling-org-apache-sling-hc-webconsole.git' description='Apache Sling Health Check Webconsole Plugin (deprecated)' groups='hc' />
   <project path='org-apache-sling-i18n' name='sling-org-apache-sling-i18n.git' description='Apache Sling I18N Support' />
   <project path='org-apache-sling-installer-console' name='sling-org-apache-sling-installer-console.git' description='Apache Sling Installer WebConsole Plugin' groups='installer' />
   <project path='org-apache-sling-installer-core' name='sling-org-apache-sling-installer-core.git' description='Apache Sling Installer' groups='installer' />
@@ -222,9 +222,9 @@
   <project path='org-apache-sling-launchpad-integration-tests' name='sling-org-apache-sling-launchpad-integration-tests.git' description='Apache Sling Launchpad Integration Tests' groups='launchpad' />
   <project path='org-apache-sling-launchpad-startupmanager' name='sling-org-apache-sling-launchpad-startupmanager.git' description='Apache Sling Launchpad Startup Manager' groups='launchpad' />
   <project path='org-apache-sling-launchpad-test-bundles' name='sling-org-apache-sling-launchpad-test-bundles.git' description='Apache Sling Launchpad Test Bundles (deprecated)' groups='launchpad' />
-  <project path='org-apache-sling-launchpad-test-fragment' name='sling-org-apache-sling-launchpad-test-fragment.git' description='Apache Sling Launchpad Testing Fragment Bundle' groups='launchpad' />
+  <project path='org-apache-sling-launchpad-test-fragment' name='sling-org-apache-sling-launchpad-test-fragment.git' description='Apache Sling Launchpad Testing Fragment Bundle (deprecated)' groups='launchpad' />
   <project path='org-apache-sling-launchpad-test-services' name='sling-org-apache-sling-launchpad-test-services.git' description='Apache Sling Launchpad Testing Services' groups='launchpad' />
-  <project path='org-apache-sling-launchpad-test-services-war' name='sling-org-apache-sling-launchpad-test-services-war.git' description='Apache Sling Launchpad Testing Services WAR' groups='launchpad' />
+  <project path='org-apache-sling-launchpad-test-services-war' name='sling-org-apache-sling-launchpad-test-services-war.git' description='Apache Sling Launchpad Testing Services WAR (deprecated)' groups='launchpad' />
   <project path='org-apache-sling-launchpad-testing' name='sling-org-apache-sling-launchpad-testing.git' description='Apache Sling Launchpad Testing (deprecated)' groups='launchpad' />
   <project path='org-apache-sling-launchpad-testing-war' name='sling-org-apache-sling-launchpad-testing-war.git' description='Apache Sling Launchpd Testing WAR (deprecated)' groups='launchpad' />
   <project path='org-apache-sling-models-api' name='sling-org-apache-sling-models-api.git' description='Apache Sling Models API' groups='models' />
