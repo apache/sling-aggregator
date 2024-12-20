@@ -61,6 +61,10 @@ println 'Overwriting module file...'
 modulesFile = new File(docsDir, 'modules.md')
 modulesFile.text = "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > Modules\n# Modules\n\n| Module | Description | Module&nbsp;Status | Pull&nbsp;Requests |\n|---    |---    |---        |---|"
 
+println 'Overwriting module parent info file...'
+modulesParentInfoFile = new File(docsDir, 'modules-parent-info.md')
+modulesParentInfoFile.text = "[Apache Sling](https://sling.apache.org) > [Aggregator](https://github.com/apache/sling-aggregator/) > Modules with Parent Info\n# Modules\n\n| Module | Version | Parent | Java Version | Java CI | Flags|\n|--- |--- |--- |--- |--- |--- |"
+
 println 'Loading manifest...'
 manifest = new XmlParser().parseText(new File('./default.xml').text)
 manifest.project.@path.each { path ->
@@ -83,7 +87,8 @@ void addRepo(File repoFolder) {
 
 void writeProject(Map project) {
     println 'Writing project...'
-    String projectStr = "| [${project.name}](https://github.com/apache/sling-${project.folder}) <br/> <small>([${project.artifactId}](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.apache.sling%22%20a%3A%22${project.artifactId}D%22))</small> | ${project.description} | ${project.badges} | &#32;[![Pull Requests](https://img.shields.io/github/issues-pr/apache/sling-${project.folder}.svg)](https://github.com/apache/sling-${project.folder}/pulls) |"
+    String projectStr = "| [${project.name}](https://github.com/apache/sling-${project.folder}) <br/> <small>([${project.artifactId}](https://central.sonatype.com/search?namespace=org.apache.sling&name=${project.artifactId}))</small> | ${project.description} | ${project.badges} | &#32;[![Pull Requests](https://img.shields.io/github/issues-pr/apache/sling-${project.folder}.svg)](https://github.com/apache/sling-${project.folder}/pulls) |"
+    String projectParentInfoStr = "| [${project.name}](https://github.com/apache/sling-${project.folder})|${project.projectVersion} | ${project.parentVersion} | ${project.javaVersion} | ${project.buildJdks} | ${project.contrib ? 'contrib' : ''} ${project.deprecated ? 'deprecated' : ''}"
 
     if (project.group) {
         println "Adding to group file ${project.group}"
@@ -118,4 +123,5 @@ void writeProject(Map project) {
         statusFile << '\n' << projectStr
     }
     modulesFile << '\n' << projectStr
+    modulesParentInfoFile << '\n' << projectParentInfoStr
 }
