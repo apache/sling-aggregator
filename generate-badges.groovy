@@ -19,6 +19,8 @@
 
 import groovy.xml.XmlParser
 import groovy.util.Node
+import groovy.json.JsonSlurper
+import groovy.yaml.YamlSlurper
 
 /* groovylint-disable JavaIoPackageAccess */
 
@@ -98,32 +100,54 @@ Map parseMavenPom(File projectFolder, File aggregatorDir) {
     println "Fetching from ${projectFolder}..."
 
     println 'Reading status lists...'
-    String[] deprecated = new File(aggregatorDir, 'deprecated-projects.txt').text.split('\\n')
-    assert deprecated
     String[] contrib = new File(aggregatorDir, 'contrib-projects.txt').text.split('\\n')
     assert contrib
 
-    if (pomFile.exists()) {
-        println 'Parsing pom.xml...'
-        Node pom = new XmlParser().parseText(pomFile.text)
+    if (!pomFile.exists()) {
+        return null
+    }
 
-        Map project = [:]
-        project['artifactId'] = pom.artifactId.text()
-        project['name'] = pom.name.text()
-        project['description'] = pom.description.text().replace('\n', ' ')
-        project['group'] = getProjectGroup(repoName, aggregatorDir)
-        project['folder'] = repoName
-        if (contrib.contains(repoName)) {
-            println 'Setting project status to contrib...'
-            project['contrib'] = true
+    println 'Parsing pom.xml...'
+    Node pom = new XmlParser().parseText(pomFile.text)
+
+    Map project = [:]
+    project['artifactId'] = pom.artifactId.text()
+    project['name'] = pom.name.text()
+    project['description'] = pom.description.text().replace('\n', ' ')
+    project['group'] = getProjectGroup(repoName, aggregatorDir)
+    project['folder'] = repoName
+    project['projectVersion'] = pom.version.text()
+    project['parentVersion'] = pom.parent.version.text()
+    project['javaVersion'] = pom.properties["sling.java.version"].text()
+    if (contrib.contains(repoName)) {
+        println 'Setting project status to contrib...'
+        project['contrib'] = true
+    }
+
+    // parse .sling-module.json
+    project['buildJdks'] = ''
+    File slingModuleFile = new File(projectFolder, '.sling-module.json')
+    if (slingModuleFile.exists()) {
+        def jsonParser = new JsonSlurper()
+        def slingModule = jsonParser.parse(slingModuleFile)
+        if (slingModule.jenkins.jdks) {
+            project['buildJdks'] = slingModule.jenkins.jdks
         }
-        if (deprecated.contains(repoName)) {
+    }
+
+    // parse .asf.yaml
+    File asfYamlFile = new File(projectFolder, '.asf.yaml')
+    if (asfYamlFile.exists()) {
+        def yamlParser = new YamlSlurper()
+        def asfYaml = yamlParser.parse(asfYamlFile)
+        def labels = asfYaml.github.labels
+        if (labels && labels.contains("deprecated")) {
             println 'Setting project status to deprecated...'
             project['deprecated'] = true
         }
-        return project
     }
-    return null
+
+    return project
 }
 
 boolean responseValid(String url) {
