@@ -23,7 +23,7 @@
 
 import groovy.io.FileType
 import groovy.transform.SourceURI
-import groovy.util.XmlParser
+import groovy.xml.XmlParser
 import groovy.util.Node
 
 import java.nio.file.Paths

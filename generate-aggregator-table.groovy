@@ -22,7 +22,7 @@
 /* groovylint-disable JavaIoPackageAccess */
 
 import groovy.io.FileType
-import groovy.util.XmlParser
+import groovy.xml.XmlParser
 import groovy.util.Node
 
 if (args.length == 0) {
@@ -108,7 +108,7 @@ void writeProject(Map project) {
     }
 
     if (project.contrib) {
-        println 'Adding to deprecated status file'
+        println 'Adding to contrib status file'
         File statusFile = new File(statusDir, 'contrib.md')
         if (!statusFile.exists()) {
             println 'Creating contrib status file'

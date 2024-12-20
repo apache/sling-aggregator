@@ -17,6 +17,9 @@
  * under the License.
  */
 
+import groovy.xml.XmlParser
+import groovy.util.Node
+
 /* groovylint-disable JavaIoPackageAccess */
 
 ArrayList calculateBadges(Map project) {
