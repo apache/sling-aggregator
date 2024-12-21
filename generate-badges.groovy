@@ -113,6 +113,9 @@ Map parseMavenPom(File projectFolder, File aggregatorDir) {
     Map project = [:]
     project['artifactId'] = pom.artifactId.text()
     project['name'] = pom.name.text()
+    if (!project['name']) {
+        project['name'] = repoName
+    }
     project['description'] = pom.description.text().replace('\n', ' ')
     project['group'] = getProjectGroup(repoName, aggregatorDir)
     project['folder'] = repoName

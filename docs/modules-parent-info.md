@@ -234,7 +234,7 @@
 | [Apache Sling Resource Resolver](https://github.com/apache/sling-org-apache-sling-resourceresolver)|1.12.3-SNAPSHOT | 52 |  |  |  
 | [Apache Sling Rewriter](https://github.com/apache/sling-org-apache-sling-rewriter)|1.4.5-SNAPSHOT | 47 |  |  |  
 | [Apache Sling Scripting API](https://github.com/apache/sling-org-apache-sling-scripting-api)|2.2.3-SNAPSHOT | 62 | 8 | [17, 21] |  
-| [](https://github.com/apache/sling-org-apache-sling-scripting-bundle-tracker-it)|0.1.1-SNAPSHOT | 34 |  |  |  
+| [org-apache-sling-scripting-bundle-tracker-it](https://github.com/apache/sling-org-apache-sling-scripting-bundle-tracker-it)|0.1.1-SNAPSHOT | 34 |  |  |  
 | [Apache Sling Scripting Core](https://github.com/apache/sling-org-apache-sling-scripting-core)|2.4.11-SNAPSHOT | 48 |  |  |  
 | [Apache Sling Scripting EL API Wrapper](https://github.com/apache/sling-org-apache-sling-scripting-el-api)|1.0.5-SNAPSHOT | 35 |  |  |  
 | [Apache Sling Scripting ESX](https://github.com/apache/sling-org-apache-sling-scripting-esx)|0.1.0-SNAPSHOT | 30 | 8 |  |  
