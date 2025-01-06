@@ -21,7 +21,7 @@
 | [Apache Sling - CMS](https://github.com/apache/sling-org-apache-sling-app-cms)|1.1.9-SNAPSHOT | 49 |  | [11, 17] |  
 | [Apache Sling Auth Core](https://github.com/apache/sling-org-apache-sling-auth-core)|1.7.1-SNAPSHOT | 49 |  |  |  
 | [Apache Sling Form Based Authentication](https://github.com/apache/sling-org-apache-sling-auth-form)|1.0.25-SNAPSHOT | 46 |  |  |  
-| [Apache Sling OAuth client](https://github.com/apache/sling-org-apache-sling-auth-oauth-client)|0.1-SNAPSHOT | 49 | 17 | [17, 21] |  
+| [Apache Sling OAuth Client](https://github.com/apache/sling-org-apache-sling-auth-oauth-client)|0.1.1-SNAPSHOT | 49 | 17 | [17, 21] |  
 | [SAML2 Service Provider](https://github.com/apache/sling-org-apache-sling-auth-saml2)|0.2.7-SNAPSHOT | 41 |  | [11] |  
 | [Apache Sling Authentication XING API](https://github.com/apache/sling-org-apache-sling-auth-xing-api)|0.0.3-SNAPSHOT | 26 |  |  |  
 | [Apache Sling Authentication XING Login](https://github.com/apache/sling-org-apache-sling-auth-xing-login)|0.0.3-SNAPSHOT | 26 |  |  |  
@@ -51,7 +51,7 @@
 | [Apache Sling Commons Content Analyzing](https://github.com/apache/sling-org-apache-sling-commons-content-analyzing)|2.0.0-SNAPSHOT | 51 | 8 | [17, 11] |  
 | [Apache Sling Commons Content Processing](https://github.com/apache/sling-org-apache-sling-commons-content-processing)|2.0.0-SNAPSHOT | 51 | 8 | [17, 11] |  
 | [Apache Sling Commons Content Detection](https://github.com/apache/sling-org-apache-sling-commons-contentdetection)|1.0.5-SNAPSHOT | 38 |  |  |  
-| [Apache Sling Commons Crypto](https://github.com/apache/sling-org-apache-sling-commons-crypto)|1.1.1-SNAPSHOT | 60 | 11 | [17] |  
+| [Apache Sling Commons Crypto](https://github.com/apache/sling-org-apache-sling-commons-crypto)|1.1.1-SNAPSHOT | 60 | 11 | [17, 21] |  
 | [Apache Sling Commons FileSystem ClassLoader](https://github.com/apache/sling-org-apache-sling-commons-fsclassloader)|1.0.17-SNAPSHOT | 62 | 8 | [17, 21] |  
 | [Apache Sling Commons HTML Utilities](https://github.com/apache/sling-org-apache-sling-commons-html)|1.2.0-SNAPSHOT | 38 |  |  |  
 | [Apache Sling Commons JCR File](https://github.com/apache/sling-org-apache-sling-commons-jcr-file)|1.0.0-SNAPSHOT | 38 | 8 |  |  
@@ -205,11 +205,6 @@
 | [Apache Sling Models Validation Implementation](https://github.com/apache/sling-org-apache-sling-models-validation-impl)|1.1.1-SNAPSHOT | 49 | 8 |  |  
 | [Apache Sling Message oriented Middleware API](https://github.com/apache/sling-org-apache-sling-mom)|1.0.1-SNAPSHOT | 47 | 8 |  |  
 | [Apache Sling MongoDB Resource Provider](https://github.com/apache/sling-org-apache-sling-mongodb)|0.0.1-SNAPSHOT | 26 |  |  |  
-| [Apache Sling NoSQL Couchbase Client](https://github.com/apache/sling-org-apache-sling-nosql-couchbase-client)|1.0.3-SNAPSHOT | 26 | 7 |  |  
-| [Apache Sling NoSQL Couchbase Resource Provider](https://github.com/apache/sling-org-apache-sling-nosql-couchbase-resourceprovider)|1.1.1-SNAPSHOT | 26 | 7 |  |  
-| [Apache Sling NoSQL Generic Resource Provider](https://github.com/apache/sling-org-apache-sling-nosql-generic)|1.1.1-SNAPSHOT | 26 | 7 |  |  
-| [Apache Sling NoSQL Launchpad](https://github.com/apache/sling-org-apache-sling-nosql-launchpad)|1.0.0-SNAPSHOT | 33 | 7 |  |  
-| [Apache Sling NoSQL MongoDB Resource Provider](https://github.com/apache/sling-org-apache-sling-nosql-mongodb-resourceprovider)|1.1.1-SNAPSHOT | 26 | 7 |  |  
 | [Apache Sling Oak Restrictions](https://github.com/apache/sling-org-apache-sling-oak-restrictions)|1.0.3-SNAPSHOT | 47 | 8 |  |  
 | [Apache Sling Pax Exam Utilities](https://github.com/apache/sling-org-apache-sling-paxexam-util)|1.0.5-SNAPSHOT | 30 |  |  |  
 | [Apache Sling Performance Test Tools Reactor](https://github.com/apache/sling-org-apache-sling-performance)|0.9.9-SNAPSHOT | 26 |  |  |  
@@ -280,7 +275,7 @@
 | [Apache Sling Testing JCR Mock](https://github.com/apache/sling-org-apache-sling-testing-jcr-mock)|1.7.0-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Testing Mock Log Configuration](https://github.com/apache/sling-org-apache-sling-testing-logging-mock)|2.1.0-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Testing OSGi Mock](https://github.com/apache/sling-org-apache-sling-testing-osgi-mock)| | 3.5.3-SNAPSHOT |  | [17, 21] |  
-| [Apache Sling Testing PaxExam](https://github.com/apache/sling-org-apache-sling-testing-paxexam)|4.0.1-SNAPSHOT | 51 | 11 | [17, 11] |  
+| [Apache Sling Testing PaxExam](https://github.com/apache/sling-org-apache-sling-testing-paxexam)|5.0.0-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Testing Resource Resolver Mock](https://github.com/apache/sling-org-apache-sling-testing-resourceresolver-mock)|1.5.1-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Testing Rules](https://github.com/apache/sling-org-apache-sling-testing-rules)|2.0.3-SNAPSHOT | 48 |  |  |  
 | [Apache Sling Server Setup Tools](https://github.com/apache/sling-org-apache-sling-testing-serversetup)|1.0.5-SNAPSHOT | 39 |  |  |  
@@ -297,7 +292,7 @@
 | [Apache Sling Validation Framework Testing Services](https://github.com/apache/sling-org-apache-sling-validation-test-services)|1.0.5-SNAPSHOT | 46 | 8 |  |  
 | [Apache Sling XSS Protection API](https://github.com/apache/sling-org-apache-sling-xss)|2.4.5-SNAPSHOT | 52 |  | [11, 17, 21] |  
 | [Apache Sling Parent Reactor](https://github.com/apache/sling-parent)|63-SNAPSHOT | 33 |  | [17, 21] |  
-| [Project Archetype](https://github.com/apache/sling-project-archetype)|1.0.13-SNAPSHOT | 62 | 11 | [17, 21] |  
+| [Project Archetype](https://github.com/apache/sling-project-archetype)|1.0.15-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Samples (Builder)](https://github.com/apache/sling-samples)|2-SNAPSHOT | 18 |  |  |  
 | [Apache Sling Scripting Bundle Maven Plugin](https://github.com/apache/sling-scriptingbundle-maven-plugin)|0.5.3-SNAPSHOT | 46 | 8 | [8, 11, 13] |  
 | [Apache Sling Website](https://github.com/apache/sling-site)|0.1-SNAPSHOT |  |  | [11] |  
