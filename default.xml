@@ -179,7 +179,7 @@
   <project path='org-apache-sling-jcr-base' name='sling-org-apache-sling-jcr-base.git' description='Apache Sling JCR Base Bundle' groups='jcr' />
   <project path='org-apache-sling-jcr-classloader' name='sling-org-apache-sling-jcr-classloader.git' description='Apache Sling JCR ClassLoader' groups='jcr' />
   <project path='org-apache-sling-jcr-contentloader' name='sling-org-apache-sling-jcr-contentloader.git' description='Apache Sling Initial Content Loader' groups='jcr' />
-  <project path='org-apache-sling-jcr-contentparser' name='sling-org-apache-sling-jcr-contentparser.git' description='Apache Sling JCR Content Parser' groups='jcr' />
+  <project path='org-apache-sling-jcr-contentparser' name='sling-org-apache-sling-jcr-contentparser.git' description='Apache Sling JCR Content Parser (deprecated)' groups='jcr' />
   <project path='org-apache-sling-jcr-davex' name='sling-org-apache-sling-jcr-davex.git' description='Apache Sling JCR DavEx' groups='jcr' />
   <project path='org-apache-sling-jcr-filetransfer' name='sling-org-apache-sling-jcr-filetransfer.git' description='Apache Sling JCR File Transfer' groups='jcr' />
   <project path='org-apache-sling-jcr-jackrabbit-accessmanager' name='sling-org-apache-sling-jcr-jackrabbit-accessmanager.git' description='Apache Sling Jackrabbit JSR-283 Access Control Manager Support' groups='jcr' />
@@ -235,11 +235,11 @@
   <project path='org-apache-sling-models-validation-impl' name='sling-org-apache-sling-models-validation-impl.git' description='Apache Sling Models Validation Implementation' groups='models' />
   <project path='org-apache-sling-mom' name='sling-org-apache-sling-mom.git' description='Apache Sling Message oriented Middleware API' />
   <project path='org-apache-sling-mongodb' name='sling-org-apache-sling-mongodb.git' description='Apache Sling MongoDB Resource Provider' />
-  <project path='org-apache-sling-nosql-couchbase-client' name='sling-org-apache-sling-nosql-couchbase-client.git' description='Apache Sling NoSQL Couchbase Client' groups='nosql' />
-  <project path='org-apache-sling-nosql-couchbase-resourceprovider' name='sling-org-apache-sling-nosql-couchbase-resourceprovider.git' description='Apache Sling NoSQL Couchbase Resource Provider' groups='nosql' />
-  <project path='org-apache-sling-nosql-generic' name='sling-org-apache-sling-nosql-generic.git' description='Apache Sling NoSQL Generic Resource Provider' groups='nosql' />
-  <project path='org-apache-sling-nosql-launchpad' name='sling-org-apache-sling-nosql-launchpad.git' description='Apache Sling NoSQL Launchpad' groups='nosql' />
-  <project path='org-apache-sling-nosql-mongodb-resourceprovider' name='sling-org-apache-sling-nosql-mongodb-resourceprovider.git' description='Apache Sling NoSQL MongoDB Resource Provider' groups='nosql' />
+  <project path='org-apache-sling-nosql-couchbase-client' name='sling-org-apache-sling-nosql-couchbase-client.git' description='Apache Sling NoSQL Couchbase Client (deprecated)' groups='nosql' />
+  <project path='org-apache-sling-nosql-couchbase-resourceprovider' name='sling-org-apache-sling-nosql-couchbase-resourceprovider.git' description='Apache Sling NoSQL Couchbase Resource Provider (deprecated)' groups='nosql' />
+  <project path='org-apache-sling-nosql-generic' name='sling-org-apache-sling-nosql-generic.git' description='Apache Sling NoSQL Generic Resource Provider (deprecated)' groups='nosql' />
+  <project path='org-apache-sling-nosql-launchpad' name='sling-org-apache-sling-nosql-launchpad.git' description='Apache Sling NoSQL Launchpad (deprecated)' groups='nosql' />
+  <project path='org-apache-sling-nosql-mongodb-resourceprovider' name='sling-org-apache-sling-nosql-mongodb-resourceprovider.git' description='Apache Sling NoSQL MongoDB Resource Provider (deprecated)' groups='nosql' />
   <project path='org-apache-sling-oak-restrictions' name='sling-org-apache-sling-oak-restrictions.git' description='Apache Sling Oak Restrictions' />
   <project path='org-apache-sling-paxexam-util' name='sling-org-apache-sling-paxexam-util.git' description='Apache Sling Pax Exam Utilities' />
   <project path='org-apache-sling-performance' name='sling-org-apache-sling-performance.git' description='Apache Sling Performance Test Tools Reactor' />
