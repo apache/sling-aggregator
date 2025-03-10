@@ -14,8 +14,8 @@
 | [Apache Sling Launchpad Debian Package Builder](https://github.com/apache/sling-launchpad-debian)|9-SNAPSHOT | 26 |  |  |  
 | [Maven Enforcer Rules](https://github.com/apache/sling-maven-enforcer-rules)|1.2.1-SNAPSHOT | 52 | 8 | [8, 11, 17] |  
 | [Apache Sling Maven Launchpad Plugin](https://github.com/apache/sling-maven-launchpad-plugin)|2.3.5-SNAPSHOT | 26 |  |  |  
-| [Apache Sling Maven Plugin](https://github.com/apache/sling-maven-plugin)|3.0.3-SNAPSHOT | 62 | 11 | [17] |  
-| [Apache Sling Adapter Manager Implementation](https://github.com/apache/sling-org-apache-sling-adapter)|2.2.1-SNAPSHOT | 62 | 8 | [17, 21] |  
+| [Apache Sling Maven Plugin](https://github.com/apache/sling-maven-plugin)|3.0.5-SNAPSHOT | 62 | 11 | [17, 21] |  
+| [Apache Sling Adapter Manager Implementation](https://github.com/apache/sling-org-apache-sling-adapter)|2.3.1-SNAPSHOT | 62 | 8 | [17, 21] |  
 | [Apache Sling Adapter Annotations](https://github.com/apache/sling-org-apache-sling-adapter-annotations)|2.0.1-SNAPSHOT | 62 | 8 | [17, 21] |  
 | [Apache Sling API](https://github.com/apache/sling-org-apache-sling-api)|3.0.0-SNAPSHOT | 62 | 17 | [17, 21] |  
 | [Apache Sling - CMS](https://github.com/apache/sling-org-apache-sling-app-cms)|1.1.9-SNAPSHOT | 49 |  | [11, 17] |  
@@ -26,25 +26,20 @@
 | [Apache Sling Authentication XING API](https://github.com/apache/sling-org-apache-sling-auth-xing-api)|0.0.3-SNAPSHOT | 26 |  |  |  
 | [Apache Sling Authentication XING Login](https://github.com/apache/sling-org-apache-sling-auth-xing-login)|0.0.3-SNAPSHOT | 26 |  |  |  
 | [Apache Sling Authentication XING OAuth](https://github.com/apache/sling-org-apache-sling-auth-xing-oauth)|0.0.3-SNAPSHOT | 26 |  |  |  
-| [Apache Sling Models bnd Plugin](https://github.com/apache/sling-org-apache-sling-bnd-models)|1.0.1-SNAPSHOT | 60 |  | [17, 21] |  
+| [Apache Sling Models bnd Plugin](https://github.com/apache/sling-org-apache-sling-bnd-models)|1.0.1-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling bnd Remove Parameters from OSGi Headers Plugin](https://github.com/apache/sling-org-apache-sling-bnd-plugin-headers-parameters-remove)|1.0.1-SNAPSHOT | 34 |  |  |  
 | [Apache Sling bnd Plugins](https://github.com/apache/sling-org-apache-sling-bnd-plugins)|0.0.3-SNAPSHOT | 34 |  |  |  
-| [Apache Sling Bundle Resource Provider](https://github.com/apache/sling-org-apache-sling-bundleresource-impl)|2.3.5-SNAPSHOT | 52 |  |  |  
-| [Apache Sling Context-Aware Configuration API](https://github.com/apache/sling-org-apache-sling-caconfig-api)|1.3.1-SNAPSHOT | 60 |  | [17, 21] |  
-| [Apache Sling Context-Aware Configuration bnd Plugin](https://github.com/apache/sling-org-apache-sling-caconfig-bnd-plugin)|1.0.3-SNAPSHOT | 60 |  | [17, 21] |  
-| [Apache Sling Context-Aware Configuration Implementation](https://github.com/apache/sling-org-apache-sling-caconfig-impl)|1.6.1-SNAPSHOT | 60 |  | [17, 21] |  
+| [Apache Sling Bundle Resource Provider](https://github.com/apache/sling-org-apache-sling-bundleresource-impl)|2.4.1-SNAPSHOT | 62 | 11 | [17, 21] |  
+| [Apache Sling Context-Aware Configuration API](https://github.com/apache/sling-org-apache-sling-caconfig-api)|1.3.1-SNAPSHOT | 62 | 11 | [17, 21] |  
+| [Apache Sling Context-Aware Configuration bnd Plugin](https://github.com/apache/sling-org-apache-sling-caconfig-bnd-plugin)|1.0.3-SNAPSHOT | 62 | 8 | [17, 21] |  
+| [Apache Sling Context-Aware Configuration Implementation](https://github.com/apache/sling-org-apache-sling-caconfig-impl)|1.7.1-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Context-Aware Configuration Integration Tests](https://github.com/apache/sling-org-apache-sling-caconfig-integration-tests)|1-SNAPSHOT | 46 | 8 |  |  
-| [Apache Sling Context-Aware Configuration SPI](https://github.com/apache/sling-org-apache-sling-caconfig-spi)|1.4.1-SNAPSHOT | 60 |  | [17, 21] |  
+| [Apache Sling Context-Aware Configuration SPI](https://github.com/apache/sling-org-apache-sling-caconfig-spi)|1.4.1-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Capabilities](https://github.com/apache/sling-org-apache-sling-capabilities)|0.1.3-SNAPSHOT | 38 | 8 |  |  
 | [Apache Sling Capabilities - JCR source](https://github.com/apache/sling-org-apache-sling-capabilities-jcr)|0.1.3-SNAPSHOT | 38 | 8 |  |  
-| [Apache Sling Cassandra Resource Provider](https://github.com/apache/sling-org-apache-sling-cassandra)|0.0.1-SNAPSHOT | 30 |  |  |  
 | [Apache Sling Clam](https://github.com/apache/sling-org-apache-sling-clam)|1.1.1-SNAPSHOT | 51 | 8 | [17, 11] |  
 | [Apache Sling Committer CLI](https://github.com/apache/sling-org-apache-sling-committer-cli)|1.0-SNAPSHOT | 52 | 11 | [11] |  
-| [Apache Sling Commons Cache API](https://github.com/apache/sling-org-apache-sling-commons-cache-api)|0.1-SNAPSHOT | 47 | 8 |  |  
-| [Apache Sling OSGi PAX Exam support library](https://github.com/apache/sling-org-apache-sling-commons-cache-container-test)|0.1-SNAPSHOT | 16 |  |  |  
-| [Apache Sling Cache API EhCache implementation](https://github.com/apache/sling-org-apache-sling-commons-cache-ehcache)|0.1-SNAPSHOT | 16 |  |  |  
 | [Apache Sling Cache API Implementation support library](https://github.com/apache/sling-org-apache-sling-commons-cache-impl)|0.1-SNAPSHOT | 47 | 8 |  |  
-| [Apache Sling Cache Portal Cache](https://github.com/apache/sling-org-apache-sling-commons-cache-portal)|0.1-SNAPSHOT | 16 |  |  |  
 | [Apache Sling Commons Clam](https://github.com/apache/sling-org-apache-sling-commons-clam)|2.0.1-SNAPSHOT | 51 | 8 | [17, 11] |  
 | [Apache Sling Dynamic Class Loader Support](https://github.com/apache/sling-org-apache-sling-commons-classloader)|1.4.5-SNAPSHOT | 38 |  |  |  
 | [Apache Sling Commons Compiler](https://github.com/apache/sling-org-apache-sling-commons-compiler)|2.4.1-SNAPSHOT | 38 |  |  |  
@@ -129,7 +124,7 @@
 | [Apache Sling System Bundle Extension: Java Transaction API](https://github.com/apache/sling-org-apache-sling-fragment-transaction)|1.0.1-SNAPSHOT | 26 |  |  |  
 | [Apache Sling System Bundle Extension: WS APIs](https://github.com/apache/sling-org-apache-sling-fragment-ws)|1.0.3-SNAPSHOT | 26 |  |  |  
 | [Apache Sling System Bundle Extension: XML APIs](https://github.com/apache/sling-org-apache-sling-fragment-xml)|1.0.3-SNAPSHOT | 26 |  |  |  
-| [Apache Sling File System Resource Provider](https://github.com/apache/sling-org-apache-sling-fsresource)|2.2.1-SNAPSHOT | 62 | 8 | [17, 21] |  
+| [Apache Sling File System Resource Provider](https://github.com/apache/sling-org-apache-sling-fsresource)|2.3.1-SNAPSHOT | 62 | 8 | [17, 21] |  
 | [Apache Sling GraphQL Core](https://github.com/apache/sling-org-apache-sling-graphql-core)|0.0.31-SNAPSHOT | 49 |  | [11, 17] |  
 | [Apache Sling GraphQL Schema Aggregator](https://github.com/apache/sling-org-apache-sling-graphql-schema-aggregator)|0.0.1-SNAPSHOT | 43 |  |  |  
 | [Apache Sling Hypermedia API tools](https://github.com/apache/sling-org-apache-sling-hapi)|1.1.1-SNAPSHOT | 30 | 6 |  |  
@@ -197,14 +192,13 @@
 | [Apache Sling Launchpad Integration Tests](https://github.com/apache/sling-org-apache-sling-launchpad-integration-tests)|14-SNAPSHOT | 62 | 8 | [17, 21] |  
 | [Apache Sling Launchpad Startup Manager](https://github.com/apache/sling-org-apache-sling-launchpad-startupmanager)|1.0.1-SNAPSHOT | 38 | 8 |  |  
 | [Apache Sling Launchpad Testing Services](https://github.com/apache/sling-org-apache-sling-launchpad-test-services)|14-SNAPSHOT | 62 | 8 | [17, 21] |  
-| [Apache Sling Models API](https://github.com/apache/sling-org-apache-sling-models-api)|1.5.5-SNAPSHOT | 60 | 8 | [17, 21] |  
+| [Apache Sling Models API](https://github.com/apache/sling-org-apache-sling-models-api)|1.5.5-SNAPSHOT | 62 | 8 | [17, 21] |  
 | [Apache Sling Models Context-Aware Configuration](https://github.com/apache/sling-org-apache-sling-models-caconfig)|1.0.3-SNAPSHOT | 62 | 8 | [17, 21] |  
 | [Apache Sling Models Implementation](https://github.com/apache/sling-org-apache-sling-models-impl)|1.7.9-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Models Integration Tests](https://github.com/apache/sling-org-apache-sling-models-integration-tests)|0.0.1-SNAPSHOT | 52 | 8 | [11] |  
 | [Apache Sling Models Jackson Exporter](https://github.com/apache/sling-org-apache-sling-models-jacksonexporter)|1.1.5-SNAPSHOT | 62 | 11 | [17, 21] |  
 | [Apache Sling Models Validation Implementation](https://github.com/apache/sling-org-apache-sling-models-validation-impl)|1.1.1-SNAPSHOT | 49 | 8 |  |  
 | [Apache Sling Message oriented Middleware API](https://github.com/apache/sling-org-apache-sling-mom)|1.0.1-SNAPSHOT | 47 | 8 |  |  
-| [Apache Sling MongoDB Resource Provider](https://github.com/apache/sling-org-apache-sling-mongodb)|0.0.1-SNAPSHOT | 26 |  |  |  
 | [Apache Sling Oak Restrictions](https://github.com/apache/sling-org-apache-sling-oak-restrictions)|1.0.3-SNAPSHOT | 47 | 8 |  |  
 | [Apache Sling Pax Exam Utilities](https://github.com/apache/sling-org-apache-sling-paxexam-util)|1.0.5-SNAPSHOT | 30 |  |  |  
 | [Apache Sling Performance Test Tools Reactor](https://github.com/apache/sling-org-apache-sling-performance)|0.9.9-SNAPSHOT | 26 |  |  |  
@@ -216,7 +210,6 @@
 | [Apache Sling RepoInit Integration Tests](https://github.com/apache/sling-org-apache-sling-repoinit-it)|0.0.2-SNAPSHOT | 43 |  |  |  deprecated
 | [Apache Sling Repoinit Parser](https://github.com/apache/sling-org-apache-sling-repoinit-parser)|1.9.3-SNAPSHOT | 62 | 8 | [17, 21] |  
 | [Apache Sling Request Processing Analyzer](https://github.com/apache/sling-org-apache-sling-reqanalyzer)|0.0.1-SNAPSHOT | 47 | 8 |  |  
-| [Apache Sling Resource Editor](https://github.com/apache/sling-org-apache-sling-resource-editor)|1.0.1-SNAPSHOT | 22 |  |  |  
 | [Apache Sling Resource Filter](https://github.com/apache/sling-org-apache-sling-resource-filter)|1.0.1-SNAPSHOT | 49 | 8 |  |  
 | [Apache Sling Inventory Printer Based on Resources](https://github.com/apache/sling-org-apache-sling-resource-inventory)|1.0.9-SNAPSHOT | 47 | 8 |  |  
 | [Apache Sling Resource Observation Annotations](https://github.com/apache/sling-org-apache-sling-resource-observation-annotations)|1.0.1-SNAPSHOT | 60 | 8 |  |  

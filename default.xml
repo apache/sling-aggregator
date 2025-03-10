@@ -47,14 +47,14 @@
   <project path='org-apache-sling-caconfig-spi' name='sling-org-apache-sling-caconfig-spi.git' description='Apache Sling Context-Aware Configuration SPI' groups='caconfig' />
   <project path='org-apache-sling-capabilities' name='sling-org-apache-sling-capabilities.git' description='Apache Sling Capabilities' />
   <project path='org-apache-sling-capabilities-jcr' name='sling-org-apache-sling-capabilities-jcr.git' description='Apache Sling JCR Capabilities' />
-  <project path='org-apache-sling-cassandra' name='sling-org-apache-sling-cassandra.git' description='Apache Sling Cassandra Resource Provider' />
+  <project path='org-apache-sling-cassandra' name='sling-org-apache-sling-cassandra.git' description='Apache Sling Cassandra Resource Provider (deprecated)' />
   <project path='org-apache-sling-clam' name='sling-org-apache-sling-clam.git' description='Apache Sling Clam' />
   <project path='org-apache-sling-committer-cli' name='sling-org-apache-sling-committer-cli.git' description='Apache Sling Commiter CLI' />
-  <project path='org-apache-sling-commons-cache-api' name='sling-org-apache-sling-commons-cache-api.git' description='Apache Sling Commons Cache API' />
-  <project path='org-apache-sling-commons-cache-container-test' name='sling-org-apache-sling-commons-cache-container-test.git' description='Apache Sling OSGi PAX Exam support library' />
-  <project path='org-apache-sling-commons-cache-ehcache' name='sling-org-apache-sling-commons-cache-ehcache.git' description='Apache Sling Cache API EhCache implementation' />
+  <project path='org-apache-sling-commons-cache-api' name='sling-org-apache-sling-commons-cache-api.git' description='Apache Sling Commons Cache API (deprecated)' />
+  <project path='org-apache-sling-commons-cache-container-test' name='sling-org-apache-sling-commons-cache-container-test.git' description='Apache Sling OSGi PAX Exam support library (deprecated)' />
+  <project path='org-apache-sling-commons-cache-ehcache' name='sling-org-apache-sling-commons-cache-ehcache.git' description='Apache Sling Cache API EhCache implementation (deprecated)' />
   <project path='org-apache-sling-commons-cache-impl' name='sling-org-apache-sling-commons-cache-impl.git' description='Apache Sling Cache API Implementation support library' />
-  <project path='org-apache-sling-commons-cache-portal' name='sling-org-apache-sling-commons-cache-portal.git' description='Apache Sling Cache Portal Cache' />
+  <project path='org-apache-sling-commons-cache-portal' name='sling-org-apache-sling-commons-cache-portal.git' description='Apache Sling Cache Portal Cache (deprecated)' />
   <project path='org-apache-sling-commons-clam' name='sling-org-apache-sling-commons-clam.git' description='Apache Sling Commons Clam' />
   <project path='org-apache-sling-commons-classloader' name='sling-org-apache-sling-commons-classloader.git' description='Apache Sling Dynamic Class Loader Support' />
   <project path='org-apache-sling-commons-compiler' name='sling-org-apache-sling-commons-compiler.git' description='Apache Sling Commons Java Compiler' />
@@ -234,7 +234,7 @@
   <project path='org-apache-sling-models-jacksonexporter' name='sling-org-apache-sling-models-jacksonexporter.git' description='Apache Sling Models Jackson Exporter' groups='models' />
   <project path='org-apache-sling-models-validation-impl' name='sling-org-apache-sling-models-validation-impl.git' description='Apache Sling Models Validation Implementation' groups='models' />
   <project path='org-apache-sling-mom' name='sling-org-apache-sling-mom.git' description='Apache Sling Message oriented Middleware API' />
-  <project path='org-apache-sling-mongodb' name='sling-org-apache-sling-mongodb.git' description='Apache Sling MongoDB Resource Provider' />
+  <project path='org-apache-sling-mongodb' name='sling-org-apache-sling-mongodb.git' description='Apache Sling MongoDB Resource Provider (deprecated)' />
   <project path='org-apache-sling-nosql-couchbase-client' name='sling-org-apache-sling-nosql-couchbase-client.git' description='Apache Sling NoSQL Couchbase Client (deprecated)' groups='nosql' />
   <project path='org-apache-sling-nosql-couchbase-resourceprovider' name='sling-org-apache-sling-nosql-couchbase-resourceprovider.git' description='Apache Sling NoSQL Couchbase Resource Provider (deprecated)' groups='nosql' />
   <project path='org-apache-sling-nosql-generic' name='sling-org-apache-sling-nosql-generic.git' description='Apache Sling NoSQL Generic Resource Provider (deprecated)' groups='nosql' />
@@ -251,7 +251,7 @@
   <project path='org-apache-sling-repoinit-it' name='sling-org-apache-sling-repoinit-it.git' description='Apache Sling RepoInit Integration Tests(deprecated)' groups='repoinit' />
   <project path='org-apache-sling-repoinit-parser' name='sling-org-apache-sling-repoinit-parser.git' description='Apache Sling RepoInit Parser' groups='repoinit' />
   <project path='org-apache-sling-reqanalyzer' name='sling-org-apache-sling-reqanalyzer.git' description='Apache Sling Request Processing Analyzer' />
-  <project path='org-apache-sling-resource-editor' name='sling-org-apache-sling-resource-editor.git' description='Apache Sling Resource Editor' />
+  <project path='org-apache-sling-resource-editor' name='sling-org-apache-sling-resource-editor.git' description='Apache Sling Resource Editor (deprecated)' />
   <project path='org-apache-sling-resource-filter' name='sling-org-apache-sling-resource-filter.git' description='Apache Sling Resource Filter' />
   <project path='org-apache-sling-resource-inventory' name='sling-org-apache-sling-resource-inventory.git' description='Apache Sling Inventory Printer Based on Resources' />
   <project path='org-apache-sling-resource-observation-annotations' name='sling-org-apache-sling-resource-observation-annotations.git' description='Apache sling' />
