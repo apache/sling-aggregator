@@ -78,7 +78,7 @@ $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 $ chmod a+x ~/bin/repo
 ```
 
-See also the detailed instructions at https://source.android.com/docs/setup/download/source-control-tools#repo.
+See also the detailed instructions at <https://gerrit.googlesource.com/git-repo/>.
 
 ### Repo Tool Installation on Mac with [Homebrew](https://brew.sh)
 
