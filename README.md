@@ -69,7 +69,7 @@ To update the aggregator list:
 ## Retrieving all Sling modules
 
 This module allows quick checkout of all Sling modules from Git. It requires
-the local installation of the [repo](https://android.googlesource.com/tools/repo) tool.
+the local installation of the [repo](https://gerrit.googlesource.com/git-repo/) tool.
 
 ### Repo Tool Installation (all platforms)
 
