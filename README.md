@@ -2,136 +2,23 @@
 
 &#32;[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=apache_sling-aggregator&metric=alert_status)](https://sonarcloud.io/dashboard?id=apache_sling-aggregator) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-# Apache Sling Aggregator
+# Apache Sling - Bringing Back the Fun!
 
-This module is part of the [Apache Sling](https://sling.apache.org) project.
+Apache Sling™ is a framework for RESTful web-applications based on an extensible content tree.
 
-It provides an [XML file](./default.xml) that lists all Sling modules, to allow for tools like `repo` to process multiple repositories at once, along
-with some utility scripts to help manage our large number of repositories.
+In a nutshell, Sling maps HTTP request URLs to content resources based on the request's path, extension and selectors. Using convention over configuration, requests are processed by scripts and servlets, dynamically selected based on the current resource. This fosters meaningful URLs and resource driven request processing, while the modular nature of Sling allows for specialized server instances that include only what is needed.
 
-To update that XML file to include new Sling modules, run the [collect-sling-repos.groovy](./collect-sling-repos.groovy)
-(with `-a`, see comments in the script), check the diffs of the [default.xml](./default.xml)
-file and push the result if ok.
+Sling serves as basis for a variety of applications ranging from blogging engines all the way to enterprise content management systems.
 
-The list of modules is in a self-explaining format and can also be used in your own scripts if preferred.
+Our [Documentation Overview](https://sling.apache.org/documentation.html) page will help you get started.
 
-The [list of repositories](https://sling.apache.org/repolist.html) on our website is also generated from this data using a
-[Groovy page template](https://github.com/apache/sling-site/blob/master/src/main/jbake/templates/repolist.tpl).
+Discussions about Sling happen on our mailing lists, see our [Project Information](https://sling.apache.org/project-information.html) page for more info.
 
-Note that there are related efforts at [SLING-7331](https://issues.apache.org/jira/browse/SLING-7331) and [SLING-7262](https://issues.apache.org/jira/browse/SLING-7262), we'll need to consolidate all this at some point.
+## Source Code
 
-## Modules
+Apache Sling is a modular project and has its source code stored in multiple individual Git repositories. Please see [docs/modules.md
+](docs/modules.md) for an overview or use the [GitHub search for 'sling'](https://github.com/apache?q=sling&type=all&language=&sort=).
 
-You can find a list of the Apache Sling modules [here](docs/modules.md). 
-This list is generated from the script [generate-aggregator-table.groovy](https://github.com/apache/sling-aggregator/blob/master/generate-aggregator-table.groovy).
+## Development
 
-### Updating Module Badges
-
-We have a simple script to update the badges in GitHub's README.md files. To update a single repository:
-
-    ./generate-project-badges.groovy [REPO_DIR]
-    
-To update all repositories:
-
-    repo forall -c '[SLING_DIR]/aggregator/generate-project-badges.groovy .'
-
-### Updating the .asf.yaml files
-
-We maintain a set of [.asf.yaml](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features) files, to set reasonable defaults for all Sling GitHub repositories. To make maintenance simple, we use the [scripts/update-asf-yaml.groovy](scripts/update-asf-yaml.groovy).
-
-The script accepts a list of directories to generate or update the listing file for.
-
-```bash
-$ repo list --path-only | xargs groovy aggregator/scripts/update-asf-yaml.groovy
-$ repo forall -c 'git add .asf.yaml'
-$ repo forall -c 'git commit -m "SLING-12345 Updating .asf.yaml" -m "Detailed description"'
-```
-
-Once you are happy with what the commits look like you can push the changes, with a delay. It is recommended to use the provided `repo-push-with-delay.sh` script
-from the root of the repo checkout.
-
-```bash
-$ aggregator/scripts/repo-push-with-delay.sh
-```
-
-### Updating the Aggregator List
-
-To update the aggregator list:
-
-    groovy generate-aggregator-table.groovy [SLING_DIR]
-
-### Prerequisites
-
- 1. Use the repo tool to extract all of the repositories in the [sling aggregator](https://github.com/apache/sling-aggregator)
- 2. Ensure you have SSH based access enabled to GitHub
- 3. Ensure all repository workspaces are in a clean state
-
-## Retrieving all Sling modules
-
-This module allows quick checkout of all Sling modules from Git. It requires
-the local installation of the [repo](https://gerrit.googlesource.com/git-repo/) tool.
-
-### Repo Tool Installation (all platforms)
-
-```
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-$ chmod a+x ~/bin/repo
-```
-
-See also the detailed instructions at <https://gerrit.googlesource.com/git-repo/>.
-
-### Repo Tool Installation on Mac with [Homebrew](https://brew.sh)
-
-    brew install repo
-
-### Synchronizing all Git repositories
-
-Initialise the local repo checkout and synchronise all git repositories. The commands below must be run in the sling-aggreator git checkout.
-
-```
-$ repo init --no-clone-bundle -u https://github.com/apache/sling-aggregator.git
-$ repo sync --no-clone-bundle -j 16
-$ repo forall -c 'git checkout master'
-```
-
-The last command ensures that all repositories are set to use the master branch. For some reason `repo` checks out
-the latest revision but does not check out a specific branch.
-
-The output is a flat list of all Sling modules.
-
-The `-j 16` flag instructs repo to run 16 parallel checkout jobs and is added for performance reasons only.
-
-#### Eclipse EGit Support
-
-When trying to add such a repository with EGit in the local working copy is not detected due to the way that `repo` works with symbolic links. This has been reported in [Eclipse Bugzilla Issue #579042](https://bugs.eclipse.org/bugs/show_bug.cgi?id=579042).
-
-### Be careful with "mass pushes" to repositories
-
-ASF Infra notes that pushing to many Git repositories quickly can cause heavy load on their github
-push queue.
-
-Please use the provided script to push changes that affect multiple repositories:
-
-```bash
-$ aggregator/scripts/repo-push-with-delay.sh
-```
-
-### Updating the list of modules
-
-That list is found in the [default.xml](./default.xml) file.
-
-It is used to generate the [list of Git Repositories](http://sling.apache.org/repolist.html) on our website.
-
-**Install Groovy with with [ASDF](https://asdf-vm.com/)**
-
-    asdf install
-
-**Install Groovy on Mac with [Homebrew](https://brew.sh)**
-
-    brew install groovy
-
-To update it:
-
-    groovy collect-sling-repos.groovy > default.xml
-
-Check changes with `git diff` and commit if needed.
+For Sling developers - information about using the Sling Aggregator to check out all repositores or perform bulk operations is at [docs/devel.md](docs/devel.md).
