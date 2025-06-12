@@ -14,6 +14,11 @@ Our [Documentation Overview](https://sling.apache.org/documentation.html) page w
 
 Discussions about Sling happen on our mailing lists, see our [Project Information](https://sling.apache.org/project-information.html) page for more info.
 
-## Sling Aggregator
+## Source Code
 
-For Sling developers - information about the Sling Aggregator can be found in [docs/devel.md](docs/devel.md).
+Apache Sling is a modular project and has its source code stored in multiple individual Git repositories. Please see [docs/modules.md
+](docs/modules.md) for an overview or use the [GitHub search for 'sling'](https://github.com/apache?q=sling&type=all&language=&sort=).
+
+## Development
+
+For Sling developers - information about using the Sling Aggregator to check out all repositores or perform bulk operations is at [docs/devel.md](docs/devel.md).
